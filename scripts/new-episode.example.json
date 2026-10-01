@@ -1,0 +1,19 @@
+{
+  "id": "example_id_english_only",
+  "name": "示例指标中文名",
+  "ep": 26,
+  "title": "示例标题（去掉“｜什么指标不赚钱 第26集”后缀）",
+  "verdict": "不赚钱",
+  "perTrade": -0.11,
+  "median": -0.22,
+  "winRate": 43.21,
+  "portfolio": -11.11,
+  "eventPct": 0.0,
+  "portfolioPct": 0.0,
+  "trades": 12345,
+  "example": { "stock": "示例股票 600000.SH", "detail": "窗内1笔亏1.23%：信号→买→卖" },
+  "youtube": "YouTube视频ID",
+  "zhihu": null,
+  "bili": null,
+  "note": "一句话备注"
+}
