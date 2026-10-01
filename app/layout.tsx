@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
-
-export const SITE_URL = "https://zhibiao-lab.pages.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
