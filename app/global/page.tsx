@@ -1,38 +1,38 @@
 import type { Metadata } from "next";
-import { AIRED, INDICATORS } from "@/lib/data";
+import { AIRED, INDICATORS, PLAYLIST_URL } from "@/lib/data";
 import { SITE_URL } from "@/lib/site";
 import IndicatorTable from "@/components/IndicatorTable";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
-  title: "什么指标不赚钱 · 指标实验室",
-  description: "用 A 股历史数据回测散户常用指标：大多数不赚钱。国内版（B站视频+文章），24 集已测指标全表。",
+  title: "什么指标不赚钱 · 海外版",
+  description: "用 A 股历史数据回测散户常用指标：大多数不赚钱。海外版（YouTube 视频+文章），24 集已测指标全表。",
   alternates: {
-    canonical: `${SITE_URL}/`,
-    languages: { "zh-CN": `${SITE_URL}/`, zh: `${SITE_URL}/global/`, "x-default": `${SITE_URL}/` },
+    canonical: `${SITE_URL}/global/`,
+    languages: { "zh-CN": `${SITE_URL}/`, zh: `${SITE_URL}/global/`, "x-default": `${SITE_URL}/global/` },
   },
   openGraph: {
-    title: "什么指标不赚钱 · 指标实验室（国内版）",
-    description: "用 A 股历史数据回测散户常用指标：大多数不赚钱。B站视频 + 文章版。",
-    url: `${SITE_URL}/`,
+    title: "什么指标不赚钱 · 海外版（YouTube）",
+    description: "用 A 股历史数据回测散户常用指标：大多数不赚钱。YouTube 视频 + 文章版。",
+    url: `${SITE_URL}/global/`,
     type: "website",
     locale: "zh_CN",
   },
 };
 
-export default function Home() {
+export default function GlobalHome() {
   const airedCount = AIRED.length;
-  const withBili = AIRED.filter((i) => !!i.bili).length;
-  // 国内版：去掉 YouTube ID，避免 RSC payload 泄露到中国版 HTML（中国版只用 B站）
-  const chinaItems = INDICATORS.filter((i) => i.ep !== null).map((i) => ({ ...i, youtube: null }));
+  const withYt = AIRED.filter((i) => !!i.youtube).length;
+  // 海外版：去掉 B站 URL，避免 RSC payload 泄露（海外版只用 YouTube）
+  const globalItems = INDICATORS.filter((i) => i.ep !== null).map((i) => ({ ...i, bili: null }));
   return (
     <div>
       <section className="mb-10">
         <div className="flex flex-wrap items-center gap-2">
-          <Badge variant="secondary">国内版 · B站</Badge>
-          <a href="/global/" className="text-xs text-neutral-400 hover:text-neutral-700 hover:underline">
-            切换到海外版（YouTube）→
+          <Badge variant="secondary">海外版 · YouTube</Badge>
+          <a href="/" className="text-xs text-neutral-400 hover:text-neutral-700 hover:underline">
+            切换到国内版（B站）→
           </a>
         </div>
         <h1 className="mt-3 max-w-2xl text-3xl font-bold leading-snug tracking-tight sm:text-4xl">
@@ -46,16 +46,16 @@ export default function Home() {
           <b className="text-neutral-900 dark:text-white">全部不赚钱</b>。作者：躺平的老黄。
         </p>
         <p className="mt-2 max-w-2xl text-sm text-neutral-500">
-          国内版视频来自 B站（{withBili} 集），无 B站视频的指标只显示文章版。每个指标页都有「视频 / 文章」两种版本。
+          海外版视频来自 YouTube（{withYt} 集，隐私增强模式，点击才加载），无公开视频的指标只显示文章版。
         </p>
         <div className="mt-5 flex flex-wrap gap-3 text-sm">
           <a
-            href="https://www.bilibili.com/video/BV13MaG6MEbE"
+            href={PLAYLIST_URL}
             target="_blank"
             rel="noreferrer"
-            className="rounded-lg bg-neutral-900 px-4 py-2 font-medium text-white hover:bg-neutral-700 dark:bg-white dark:text-neutral-900"
+            className="rounded-lg bg-red-600 px-4 py-2 font-medium text-white hover:bg-red-700"
           >
-            ▶ B站合集（第1集起）
+            ▶ YouTube 播放列表
           </a>
           <a
             href="mailto:hi@zhibiao.lab?subject=我想测的指标："
@@ -70,7 +70,7 @@ export default function Home() {
         <h2 className="mb-3 text-lg font-bold">
           全部已测指标（{INDICATORS.filter((i) => i.ep !== null).length}）
         </h2>
-        <IndicatorTable items={chinaItems} edition="china" />
+        <IndicatorTable items={globalItems} edition="global" />
       </section>
 
       <Card className="mt-8 p-5 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">

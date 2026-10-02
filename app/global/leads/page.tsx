@@ -6,15 +6,15 @@ import VerdictBadge from "@/components/VerdictBadge";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "有苗头的指标",
-  description: "回测中发现的赚钱苗头：每笔扣费后为正、或事件/组合分位明显优于随机。未经样本外验证，仅供研究，不构成投资建议。",
+  title: "有苗头的指标 · 海外版",
+  description: "回测中发现的赚钱苗头（海外版）：每笔扣费后为正、或事件/组合分位明显优于随机。未经样本外验证，不构成投资建议。",
   alternates: {
-    canonical: `${SITE_URL}/leads/`,
-    languages: { "zh-CN": `${SITE_URL}/leads/`, zh: `${SITE_URL}/global/leads/`, "x-default": `${SITE_URL}/leads/` },
+    canonical: `${SITE_URL}/global/leads/`,
+    languages: { "zh-CN": `${SITE_URL}/leads/`, zh: `${SITE_URL}/global/leads/`, "x-default": `${SITE_URL}/global/leads/` },
   },
 };
 
-export default function LeadsPage() {
+export default function GlobalLeadsPage() {
   return (
     <div>
       <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">有苗头的指标</h1>
@@ -46,7 +46,7 @@ export default function LeadsPage() {
       </div>
       <p className="mt-6 text-sm text-neutral-500">
         共性：超跌/抄底类每笔有优势，追涨类普遍输给随机；但组合层面仍亏，需解决仓位与择时。
-        <Link href="/about/" className="text-blue-600 hover:underline">
+        <Link href="/global/about/" className="text-blue-600 hover:underline">
           查看回测方法
         </Link>
       </p>
