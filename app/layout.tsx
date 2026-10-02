@@ -12,12 +12,30 @@ export const metadata: Metadata = {
   },
   description: "用 A 股历史数据回测散户常用指标：大多数不赚钱。每一集都有真实回测数字，视频+文章双版本。",
   authors: [{ name: "躺平的老黄" }],
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icons/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/site.webmanifest",
+  appleWebApp: { capable: true, title: "指标实验室", statusBarStyle: "default" },
   openGraph: {
     type: "website",
     locale: "zh_CN",
     siteName: SITE_NAME,
     title: SITE_NAME,
     description: "用 A 股历史数据回测散户常用指标：大多数不赚钱。",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: SITE_NAME }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_NAME,
+    description: "用 A 股历史数据回测散户常用指标：大多数不赚钱。",
+    images: ["/og.png"],
   },
 };
 

@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "next": "15.5.4",
+    "png-to-ico": "^3.0.2",
     "react": "19.1.1",
-    "react-dom": "19.1.1"
+    "react-dom": "19.1.1",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.1.13",

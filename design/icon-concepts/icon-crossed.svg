@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- concept B: crossed-indicator（备选）. 白底 + 深灰指标线 + 蓝色斜杠划掉，寓意「指标不行」 -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="#FFFFFF" stroke="#E4E4E7" stroke-width="12"/>
+  <path d="M104 336 L208 256 H304 L408 176" fill="none" stroke="#18181B" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M132 420 L380 92" fill="none" stroke="#1A73E8" stroke-width="44" stroke-linecap="round"/>
+</svg>

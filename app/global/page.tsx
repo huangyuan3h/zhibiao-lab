@@ -12,12 +12,27 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/global/`,
     languages: { "zh-CN": `${SITE_URL}/`, zh: `${SITE_URL}/global/`, "x-default": `${SITE_URL}/global/` },
   },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
     title: "什么指标不赚钱 · 海外版（YouTube）",
     description: "用 A 股历史数据回测散户常用指标：大多数不赚钱。YouTube 视频 + 文章版。",
     url: `${SITE_URL}/global/`,
     type: "website",
     locale: "zh_CN",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "什么指标不赚钱 · 海外版" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "什么指标不赚钱 · 海外版",
+    description: "用 A 股历史数据回测散户常用指标：大多数不赚钱。",
+    images: ["/og.png"],
   },
 };
 
