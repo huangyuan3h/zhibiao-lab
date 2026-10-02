@@ -3,11 +3,11 @@ import { SITE_URL } from "@/lib/site";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "回测方法",
-  description: "指标实验室回测方法：hold5、扣费0.30%、与随机买入对照。历史回测，不构成投资建议。",
+  title: "回测方法 · 海外版",
+  description: "指标实验室回测方法（海外版）：hold5、扣费0.30%、与随机买入对照。历史回测，不构成投资建议。",
   alternates: {
-    canonical: `${SITE_URL}/about/`,
-    languages: { "zh-CN": `${SITE_URL}/about/`, zh: `${SITE_URL}/global/about/`, "x-default": `${SITE_URL}/about/` },
+    canonical: `${SITE_URL}/global/about/`,
+    languages: { "zh-CN": `${SITE_URL}/about/`, zh: `${SITE_URL}/global/about/`, "x-default": `${SITE_URL}/global/about/` },
   },
 };
 
@@ -34,11 +34,11 @@ const sections = [
   },
   {
     h: "6. 双版本说明",
-    p: "本站有两个版本：国内版（根路径，视频只用 B站，不加载任何 YouTube / Google 资源）与海外版（/global/，视频只用 YouTube 隐私增强模式）。数字与文章完全一致，只是视频来源不同，方便不同网络环境观看。",
+    p: "本站有两个版本：国内版（根路径，视频只用 B站）与海外版（/global/，视频只用 YouTube 隐私增强模式）。本页为海外版，视频只用 YouTube，点击才加载播放器。",
   },
 ];
 
-export default function AboutPage() {
+export default function GlobalAboutPage() {
   return (
     <div className="max-w-none">
       <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">回测方法</h1>
