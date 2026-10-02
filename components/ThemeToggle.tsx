@@ -25,8 +25,9 @@ export default function ThemeToggle() {
   }
 
   return (
-    <Button variant="ghost" size="sm" onClick={toggle} aria-label="切换深色/浅色" title="切换深色/浅色">
-      {theme === "dark" ? "☀︎" : "☾"}
+    <Button variant="ghost" size="sm" onClick={toggle} title="切换深色/浅色">
+      <span aria-hidden="true">{theme === "dark" ? "☀︎" : "☾"}</span>
+      <span className="sr-only">切换深色/浅色</span>
     </Button>
   );
 }

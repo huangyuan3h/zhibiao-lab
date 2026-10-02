@@ -61,3 +61,23 @@ body {
 
 /* bottom-safe for mobile */
 .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+
+/* 无障碍：深色模式下 text-neutral-500（#737373）在深底上对比度仅 4.17，不达 4.5。
+   统一提亮为 neutral-400，保证 Lighthouse color-contrast 通过；浅色模式不受影响。 */
+.dark .text-neutral-500 { color: #a3a3a3; }
+.dark .text-neutral-400 { color: #d4d4d4; }
+/* 蓝色链接在深底上：blue-600（#155dfc）对比度 3.77，提亮为 blue-300 */
+.dark .text-blue-600 { color: #93c5fd; }
+
+/* sr-only（供图标按钮的无障碍名使用，不影响视觉） */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

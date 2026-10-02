@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import ThemeToggle from "./ThemeToggle";
 import { Sheet, SheetContent } from "./ui/sheet";
 import { Button } from "./ui/button";
-import { editionFromPath, counterpartUrl } from "@/lib/site";
+import { editionFromPath, counterpartUrl, SITE_NAME, SITE_NAME_EN } from "@/lib/site";
 
 export default function SiteHeader() {
   const pathname = usePathname();
@@ -30,10 +30,10 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-neutral-200 bg-white/90 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/90">
-      <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4">
+      <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4" aria-label="主导航">
         <Link href={`${prefix}/` || "/"} className="text-[15px] font-bold tracking-tight">
-          什么指标不赚钱
-          <span className="ml-2 hidden rounded-full bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-500 sm:inline-block dark:bg-neutral-900">
+          {edition === "china" ? SITE_NAME : SITE_NAME_EN}
+          <span className="ml-2 hidden rounded-full bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-600 sm:inline-block dark:bg-neutral-900 dark:text-neutral-400">
             {edition === "china" ? "国内版" : "海外版"}
           </span>
         </Link>
@@ -59,22 +59,24 @@ export default function SiteHeader() {
         <div className="flex items-center gap-1 md:hidden">
           <Link
             href={switchHref}
-            className="rounded-md border border-neutral-200 px-2.5 py-1.5 text-xs text-neutral-500 dark:border-neutral-800"
+            className="rounded-md border border-neutral-200 px-2.5 py-1.5 text-xs text-neutral-600 dark:border-neutral-800 dark:text-neutral-400"
           >
             {edition === "china" ? "海外版" : "国内版"}
           </Link>
           <ThemeToggle />
-          <Button variant="ghost" size="sm" onClick={() => setOpen(true)} aria-label="打开菜单">
-            ☰
+          <Button variant="ghost" size="sm" onClick={() => setOpen(true)}>
+            <span aria-hidden="true">☰</span>
+            <span className="sr-only">打开菜单</span>
           </Button>
         </div>
       </nav>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetContent>
           <div className="mb-2 flex items-center justify-between">
-            <span className="font-bold">什么指标不赚钱</span>
-            <Button variant="ghost" size="sm" onClick={() => setOpen(false)} aria-label="关闭菜单">
-              ✕
+            <span className="font-bold">{edition === "china" ? SITE_NAME : SITE_NAME_EN}</span>
+            <Button variant="ghost" size="sm" onClick={() => setOpen(false)}>
+              <span aria-hidden="true">✕</span>
+              <span className="sr-only">关闭菜单</span>
             </Button>
           </div>
           {links.map((l) => (

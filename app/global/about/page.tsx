@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "回测方法 · 海外版",
-  description: "指标实验室回测方法（海外版）：hold5、扣费0.30%、与随机买入对照。历史回测，不构成投资建议。",
+  description: "老黄测指标回测方法（海外版 Lao Huang Tests Indicators）：hold5、扣费0.30%、与随机买入对照。历史回测，不构成投资建议。",
   alternates: {
     canonical: `${SITE_URL}/global/about/`,
     languages: { "zh-CN": `${SITE_URL}/about/`, zh: `${SITE_URL}/global/about/`, "x-default": `${SITE_URL}/global/about/` },
@@ -42,6 +42,9 @@ export default function GlobalAboutPage() {
   return (
     <div className="max-w-none">
       <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">回测方法</h1>
+      <p className="mt-2 text-sm leading-relaxed text-neutral-500">
+        Lao Huang Tests Indicators · 老黄测指标（海外版）· 作者：躺平的老黄。
+      </p>
       <div className="mt-4 space-y-4 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
         {sections.map((s) => (
           <Card key={s.h} className="p-4">

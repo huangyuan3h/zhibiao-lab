@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- concept A: flatline-down（入选）. 蓝底 + 白色折线：上冲 → 走平 → 下滑，寓意「什么指标不赚钱」 -->
+  <!-- 老黄测指标 icon：蓝底 + 白色折线：上冲 → 走平 → 下滑，寓意系列「什么指标不赚钱」 -->
   <rect x="16" y="16" width="480" height="480" rx="112" fill="#1A73E8"/>
   <path d="M104 336 L208 240 H304 L408 320" fill="none" stroke="#FFFFFF" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

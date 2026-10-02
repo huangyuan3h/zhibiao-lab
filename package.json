@@ -7,8 +7,9 @@
     "build": "next build",
     "preview": "npx serve ./out -l 3000",
     "update-data": "node scripts/update-data.mjs",
-    "test": "node scripts/test-request-validation.mjs",
-    "requests:summary": "node scripts/requests-summary.mjs"
+    "test": "node scripts/test-request-validation.mjs && node scripts/test-rebrand.mjs",
+    "requests:summary": "node scripts/requests-summary.mjs",
+    "analytics:report": "python3 scripts/analytics_report.py --days 7"
   },
   "dependencies": {
     "lightweight-charts": "^5.2.1",

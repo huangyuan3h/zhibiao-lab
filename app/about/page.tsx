@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "回测方法",
-  description: "指标实验室回测方法：hold5、扣费0.30%、与随机买入对照。历史回测，不构成投资建议。",
+  description: "老黄测指标回测方法：hold5、扣费0.30%、与随机买入对照。系列「什么指标不赚钱」口径说明。历史回测，不构成投资建议。",
   alternates: {
     canonical: `${SITE_URL}/about/`,
     languages: { "zh-CN": `${SITE_URL}/about/`, zh: `${SITE_URL}/global/about/`, "x-default": `${SITE_URL}/about/` },
@@ -42,6 +42,9 @@ export default function AboutPage() {
   return (
     <div className="max-w-none">
       <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">回测方法</h1>
+      <p className="mt-2 text-sm leading-relaxed text-neutral-500">
+        老黄测指标 · 作者：躺平的老黄。系列「什么指标不赚钱」用同一套口径逐个验证散户常用指标；栏目「有点苗头」（表现较好的指标）即将上线。
+      </p>
       <div className="mt-4 space-y-4 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
         {sections.map((s) => (
           <Card key={s.h} className="p-4">

@@ -17,7 +17,7 @@ export async function generateMetadata({
   const i = getIndicator(id);
   if (!i) return { title: "未找到" };
   const title = `${i.name}为什么不赚钱？${fmtPct(i.perTrade)}每笔回测`;
-  const description = `${i.title ?? i.name}｜什么指标不赚钱第${i.ep}集（国内版）：每笔${fmtPct(i.perTrade)}，胜率${i.winRate !== null ? i.winRate.toFixed(2) + "%" : "—"}，组合年化${fmtPct(i.portfolio)}。B站视频+文章。历史回测，不构成投资建议。`;
+  const description = `${i.title ?? i.name}｜老黄测指标 · 系列「什么指标不赚钱」第${i.ep}集（国内版）：每笔${fmtPct(i.perTrade)}，胜率${i.winRate !== null ? i.winRate.toFixed(2) + "%" : "—"}，组合年化${fmtPct(i.portfolio)}。B站视频+文章。历史回测，不构成投资建议。`;
   const path = `/i/${id}/`;
   return {
     title,

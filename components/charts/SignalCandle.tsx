@@ -64,10 +64,16 @@ export default function SignalCandle({ seed = 7 }: { seed?: number }) {
         wickDownColor: "#16a34a",
       });
       candle.setData(bars.map((b) => ({ ...b, time: b.time as any })));
-      candle.setMarkers([
+      // lightweight-charts v5：markers 改为 createSeriesMarkers 插件 API（旧 setMarkers 已移除）
+      const markers = [
         { time: bars[22].time as any, position: "belowBar", color: "#1a73e8", shape: "arrowUp", text: "信号买" },
         { time: bars[27].time as any, position: "aboveBar", color: "#737373", shape: "arrowDown", text: "5天后卖" },
-      ] as any);
+      ] as any;
+      if (typeof (mod as any).createSeriesMarkers === "function") {
+        (mod as any).createSeriesMarkers(candle, markers);
+      } else if (typeof candle.setMarkers === "function") {
+        candle.setMarkers(markers);
+      }
       priceChart.timeScale().fitContent();
       setReady(true);
     })();

@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "有苗头的指标 · 海外版",
-  description: "回测中发现的赚钱苗头（海外版）：每笔扣费后为正、或事件/组合分位明显优于随机。未经样本外验证，不构成投资建议。",
+  description: "老黄测指标 · 回测中发现的赚钱苗头（海外版 Lao Huang Tests Indicators）：每笔扣费后为正、或事件/组合分位明显优于随机。未经样本外验证，不构成投资建议。",
   alternates: {
     canonical: `${SITE_URL}/global/leads/`,
     languages: { "zh-CN": `${SITE_URL}/leads/`, zh: `${SITE_URL}/global/leads/`, "x-default": `${SITE_URL}/global/leads/` },
@@ -18,6 +18,9 @@ export default function GlobalLeadsPage() {
   return (
     <div>
       <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">有苗头的指标</h1>
+      <p className="mt-2 text-sm leading-relaxed text-neutral-500">
+        Lao Huang Tests Indicators · 老黄测指标（海外版）· 零散苗头合集（栏目「有点苗头」Coming soon，与本页不是同一个）。
+      </p>
       <p className="mt-3 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm leading-relaxed text-amber-900 dark:border-amber-900 dark:bg-amber-950 dark:text-amber-200">
         以下指标在回测中出现赚钱苗头（每笔扣费后为正，或分位明显优于随机），但
         <b>未经样本外验证</b>，组合层面大多仍亏，需要继续验证仓位、止损与滑点。请勿据此交易。

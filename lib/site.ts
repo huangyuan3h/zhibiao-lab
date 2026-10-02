@@ -26,5 +26,8 @@ export function counterpartUrl(path: string, edition: Edition): string {
   return path.replace(/^\/global/, "") || "/";
 }
 
-export const SITE_NAME = "什么指标不赚钱 · 指标实验室";
+export const SITE_NAME = "老黄测指标";
+export const SITE_NAME_EN = "Lao Huang Tests Indicators";
+export const SERIES_NO_MONEY = "什么指标不赚钱";
+export const SERIES_PROMISING = "有点苗头";
 export const AUTHOR_PEN_NAME = "躺平的老黄";

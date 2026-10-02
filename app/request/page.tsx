@@ -4,7 +4,7 @@ import RequestForm from "@/components/RequestForm";
 
 export const metadata: Metadata = {
   title: "你想测哪个指标？",
-  description: "告诉我们你想测的技术指标：名称必填，用法/市场/联系邮箱选填。提交后会进入回测选题池。",
+  description: "老黄测指标 · 告诉我们你想测的技术指标：名称必填，用法/市场/联系邮箱选填。提交后会进入回测选题池。",
   alternates: {
     canonical: `${SITE_URL}/request/`,
     languages: { "zh-CN": `${SITE_URL}/request/`, zh: `${SITE_URL}/global/request/`, "x-default": `${SITE_URL}/request/` },

@@ -53,9 +53,9 @@ console.log("wrote public/favicon.ico");
 
 // site.webmanifest
 const manifest = {
-  name: "什么指标不赚钱 · 指标实验室",
-  short_name: "指标实验室",
-  description: "用 A 股历史数据回测散户常用指标：大多数不赚钱。",
+  name: "老黄测指标",
+  short_name: "老黄测指标",
+  description: "老黄测指标：用 A 股历史数据回测散户常用指标，系列「什么指标不赚钱」大多数不赚钱。",
   id: "/",
   start_url: "/",
   scope: "/",
@@ -81,8 +81,8 @@ const iconForOg = await sharp(chosenSvg, { density: 512 }).resize(240, 240).png(
 const ogSvgText = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
   <rect width="100%" height="100%" fill="#FAFAF9"/>
   <rect x="0" y="0" width="8" height="630" fill="#1A73E8"/>
-  <text x="380" y="270" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="64" font-weight="800" fill="#18181B">什么指标不赚钱</text>
-  <text x="382" y="340" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="40" font-weight="600" fill="#1A73E8">指标实验室 · A股回测</text>
+  <text x="380" y="270" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="64" font-weight="800" fill="#18181B">老黄测指标</text>
+  <text x="382" y="340" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="36" font-weight="600" fill="#1A73E8">系列「什么指标不赚钱」· A股回测</text>
   <text x="382" y="400" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="26" fill="#71717A">大多数不赚钱 · 每一集都有真实回测数字</text>
 </svg>`;
 const ogTextBuf = Buffer.from(ogSvgText, "utf8");

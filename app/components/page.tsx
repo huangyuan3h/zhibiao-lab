@@ -5,7 +5,7 @@ import Showcase from "@/components/charts/Showcase";
 
 export const metadata: Metadata = {
   title: "图表组件展示",
-  description: "zhibiao-lab 可复用交互图表组件展示（内部页，不收录）。",
+  description: "老黄测指标可复用交互图表组件展示（内部页，不收录）。",
   alternates: { canonical: `${SITE_URL}/components/` },
   robots: { index: false, follow: false },
 };

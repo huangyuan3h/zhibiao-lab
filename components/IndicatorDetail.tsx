@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { getIndicator, getArticle, hasChinaVideo, hasGlobalVideo, youtubeWatch } from "@/lib/data";
+import { getIndicator, getArticle, hasChinaVideo, hasGlobalVideo, youtubeWatch, fmtPct } from "@/lib/data";
 import type { Edition } from "@/lib/site";
+import { SITE_URL } from "@/lib/site";
 import VerdictBadge from "./VerdictBadge";
 import StatsGrid from "./StatsGrid";
 import YouTubeLite from "./YouTubeLite";
@@ -18,10 +19,21 @@ export default function IndicatorDetail({ id, edition }: { id: string; edition: 
   const article = getArticle(i.id);
   const defaultTab = showVideo ? "video" : "article";
   const watch = youtubeWatch(i.youtube);
+  const path = `${prefix}/i/${i.id}/`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${i.name}为什么不赚钱？${fmtPct(i.perTrade)}每笔回测`,
+    description: `${i.title ?? i.name}｜老黄测指标 · 系列「什么指标不赚钱」第${i.ep}集`,
+    author: { "@type": "Person", name: "躺平的老黄" },
+    mainEntityOfPage: `${SITE_URL}${path}`,
+    inLanguage: "zh-CN",
+  };
 
   return (
     <article>
-      <Link href={`${prefix}/` || "/"} className="text-sm text-neutral-400 hover:text-neutral-600">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Link href={`${prefix}/` || "/"} className="text-sm text-neutral-500 hover:text-neutral-700 hover:underline">
         ← 返回全部指标
       </Link>
       <div className="mt-2 flex flex-wrap items-center gap-3">
@@ -30,7 +42,7 @@ export default function IndicatorDetail({ id, edition }: { id: string; edition: 
         </h1>
         <VerdictBadge verdict={i.verdict} />
       </div>
-      {i.title && <p className="mt-1 text-neutral-500">{i.title}｜什么指标不赚钱 第{i.ep}集</p>}
+      {i.title && <p className="mt-1 text-neutral-500">{i.title}｜老黄测指标 · 系列「什么指标不赚钱」第{i.ep}集</p>}
       <p className="mt-2 text-xs text-neutral-400">
         {edition === "china" ? "国内版 · B站视频 + 文章" : "海外版 · YouTube 视频 + 文章"} ·{" "}
         <Link href={edition === "china" ? `/global/i/${i.id}/` : `/i/${i.id}/`} className="hover:underline">

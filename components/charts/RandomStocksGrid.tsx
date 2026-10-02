@@ -26,7 +26,7 @@ export default function RandomStocksGrid({ id }: { id: string }) {
             <div key={seed} className="mt-1 first:mt-0">
               <p className="py-1 text-xs font-bold">
                 {SEED_LABEL[seed] ?? `种子 ${seed}`}：
-                <span style={{ color: (s.k_beat ?? 99) <= 4 ? C.loss : C.gain }}>
+                <span className={(s.k_beat ?? 99) <= 4 ? "text-green-700 dark:text-green-400" : "text-red-600 dark:text-red-400"}>
                   {s.k_beat ?? "—"}/{s.n} 跑赢持有
                 </span>
               </p>

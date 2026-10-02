@@ -58,17 +58,23 @@ export default function IndicatorTable({ items, edition }: { items: Indicator[];
   return (
     <div>
       <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+        <label htmlFor="indicator-search" className="sr-only">
+          搜索指标名
+        </label>
         <input
+          id="indicator-search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="搜索指标名…"
+          aria-label="搜索指标名"
           className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm focus:border-neutral-500 focus:outline-none sm:max-w-xs dark:border-neutral-700 dark:bg-neutral-950"
         />
-        <div className="flex flex-wrap gap-2 text-sm">
+        <div className="flex flex-wrap gap-2 text-sm" role="group" aria-label="按结论筛选">
           {(["全部", "不赚钱", "有苗头", "只研究"] as const).map((v) => (
             <button
               key={v}
               onClick={() => setVerdict(v)}
+              aria-pressed={verdict === v}
               className={`rounded-full border px-3 py-1 ${
                 verdict === v
                   ? "border-neutral-900 bg-neutral-900 text-white dark:border-white dark:bg-white dark:text-neutral-900"
@@ -80,6 +86,7 @@ export default function IndicatorTable({ items, edition }: { items: Indicator[];
           ))}
           <button
             onClick={() => setVideoOnly(!videoOnly)}
+            aria-pressed={videoOnly}
             className={`rounded-full border px-3 py-1 ${
               videoOnly
                 ? "border-neutral-900 bg-neutral-900 text-white dark:border-white dark:bg-white dark:text-neutral-900"
