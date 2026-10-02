@@ -73,7 +73,7 @@ export default function GlobalHome() {
             ▶ YouTube 播放列表
           </a>
           <a
-            href="mailto:hi@zhibiao.lab?subject=我想测的指标："
+            href="/global/request/"
             className="rounded-lg border border-neutral-300 bg-white px-4 py-2 font-medium text-neutral-700 hover:border-neutral-400 dark:border-neutral-700 dark:bg-neutral-950 dark:text-neutral-300"
           >
             我想测的指标

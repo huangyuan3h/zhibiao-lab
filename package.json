@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "preview": "npx serve ./out -l 3000",
-    "update-data": "node scripts/update-data.mjs"
+    "update-data": "node scripts/update-data.mjs",
+    "test": "node scripts/test-request-validation.mjs",
+    "requests:summary": "node scripts/requests-summary.mjs"
   },
   "dependencies": {
     "lightweight-charts": "^5.2.1",

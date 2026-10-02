@@ -138,6 +138,15 @@ export default function IndicatorDetail({ id, edition }: { id: string; edition: 
                   <span className="ml-2 text-xs text-neutral-400">（来源：{article.source === "zhihu" ? "知乎已发表" : "回测数据摘要"}）</span>
                 </p>
               )}
+              <p className="mt-6 rounded-lg bg-neutral-100 px-4 py-3 text-sm dark:bg-neutral-900">
+                想测别的指标？
+                <Link
+                  href={edition === "china" ? "/request/" : "/global/request/"}
+                  className="ml-1 font-medium text-blue-600 hover:underline"
+                >
+                  告诉我们你想测哪个 →
+                </Link>
+              </p>
             </Card>
           </TabsContent>
 
