@@ -6,6 +6,7 @@ import StatsGrid from "./StatsGrid";
 import YouTubeLite from "./YouTubeLite";
 import BiliLite from "./BiliLite";
 import ArticleBody from "./ArticleBody";
+import ArticleCharts from "./charts/ArticleCharts";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Card } from "./ui/card";
 
@@ -55,6 +56,15 @@ export default function IndicatorDetail({ id, edition }: { id: string; edition: 
           </Card>
         </section>
       )}
+
+      <section className="mt-8">
+        <h2 className="mb-1 text-lg font-bold">交互图表</h2>
+        <p className="mb-3 text-xs leading-relaxed text-neutral-400">
+          下图由回测 JSON 直接驱动（可点/可触摸查看数值），与文章“图注”一一对应：分布 → 净值 → 时代/拿法 → 随机对照 → 费用 → 12 只抽样。
+          K 线为形态示意（演示数据），非真实个股。
+        </p>
+        <ArticleCharts id={i.id} seed={i.ep ?? 7} />
+      </section>
 
       <section className="mt-8">
         <Tabs defaultValue={defaultTab}>

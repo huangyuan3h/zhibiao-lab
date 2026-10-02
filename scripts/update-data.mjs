@@ -14,6 +14,7 @@
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { execSync } from "node:child_process";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = resolve(HERE, "../data/indicators.json");
@@ -208,3 +209,10 @@ const aired = db.indicators.filter((i) => i.ep !== null).length;
 const withYt = db.indicators.filter((i) => i.ep !== null && !!i.youtube).length;
 const withBili = db.indicators.filter((i) => i.ep !== null && !!i.bili).length;
 console.log(`OK：共 ${db.indicators.length} 条（已播 ${aired}，YouTube ${withYt}，B站 ${withBili}），${JSON.stringify(counts)}`);
+
+// 图表 JSON：新一集只需跑 npm run update-data，public/charts/*.json 自动重建，文章页 <ArticleCharts id> 直接复用
+try {
+  execSync("node scripts/build-charts.mjs", { cwd: resolve(HERE, ".."), stdio: "inherit" });
+} catch (e) {
+  console.error(`update-data: build-charts 失败（不致命，先用旧图表）：${e.message}`);
+}
