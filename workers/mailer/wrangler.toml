@@ -1,0 +1,9 @@
+name = "zhibiao-mailer"
+main = "src/index.js"
+compatibility_date = "2026-10-02"
+
+# Cloudflare Email Service 发信绑定：仅能发往已验证目的地 huangyuan3h@gmail.com
+# 发件域必须是已接入 Email Service 的 it-t.xyz（代码里 from 默认 zhibiao@it-t.xyz）
+[[send_email]]
+name = "SEND_EMAIL"
+destination_address = "huangyuan3h@gmail.com"

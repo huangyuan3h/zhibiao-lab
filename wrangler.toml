@@ -1,5 +1,5 @@
 # zhibiao-lab Pages 项目配置（source of truth：改这里 + 重新 deploy 生效）
-# Secrets（TURNSTILE_SECRET / ADMIN_TOKEN / RESEND_API_KEY）绝不在此文件，经 wrangler pages secret put 设置
+# Secrets（TURNSTILE_SECRET / ADMIN_TOKEN / MAILER_SECRET / RESEND_API_KEY可选）绝不在此文件，经 wrangler pages secret put 设置
 name = "zhibiao-lab"
 compatibility_date = "2026-10-02"
 pages_build_output_dir = "./out"
@@ -10,9 +10,15 @@ database_name = "zhibiao-requests"
 database_id = "3b84e2cf-81b2-45e2-9b48-d513e151d751"
 
 # Cloudflare Email Service send_email 绑定 Pages 暂不支持（wrangler 校验拒绝），
-# 故邮件改走 Resend 免费 API（见 functions/api/request.ts），无需动 MX。
-# 如以后 Pages 支持 send_email，可加回 [[send_email]] 并改回 SEND_EMAIL.send()。
+# 故经独立 Worker zhibiao-mailer（workers/mailer/，send_email 绑定）发信：
+# Pages Function 经 Service 绑定 MAILER 内网调用，MAILER_URL+MAILER_SECRET 为公网兜底。
+# Resend 仅为可选 fallback（RESEND_API_KEY 设置时才用）。无需动 MX。
+
+[[services]]
+binding = "MAILER"
+service = "zhibiao-mailer"
 
 [vars]
-NOTIFY_FROM = "notify@it-t.xyz"
+NOTIFY_FROM = "zhibiao@it-t.xyz"
+MAILER_URL = "https://zhibiao-mailer.huangyuan3h.workers.dev"
 TURNSTILE_SITEKEY = "0x4AAAAAAFL4i2y48ow-Wt1_"

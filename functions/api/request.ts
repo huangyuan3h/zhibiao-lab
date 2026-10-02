@@ -1,10 +1,10 @@
 // POST /api/request — 「你想测哪个指标」提交接口（Cloudflare Pages Function）
-// 流程：校验 + 蜜罐 + 限流(D1) + Turnstile + 写 D1(requests) + 立即发邮件(失败也不回滚 DB)
-// 邮件：Resend 免费 API（RESEND_API_KEY 经 wrangler pages secret 设置；免费 100 封/天，无需改 MX）。
-//   为何不用 send_email：Pages Functions 的 wrangler 配置不支持 send_email 绑定（校验拒绝），
-//   Email Routing 本身已就绪（it-t.xyz 已启用、MX 正常、目的地已验证），但发信绑定仅 Workers 可用。
-//   如需纯 Cloudflare 发信，可另建一个 Worker（send_email）+ service 绑定调用，本次为保上线用 Resend。
-// 站点绝不出现站长邮箱；from 默认 onboarding@resend.dev（换已验证域后改 NOTIFY_FROM）。
+// 流程：校验 + 蜜罐 + 限流(D1) + Turnstile + 写 D1(requests) + 经 mailer Worker 发邮件(失败也不回滚 DB)
+// 邮件：首选 zhibiao-mailer Worker（send_email 绑定，Service 绑定调用，公网 URL+secret 为兜底），
+//   Resend 仅为可选 fallback（仅当 RESEND_API_KEY 已设置时才尝试）。
+//   为何不用 send_email 直连：Pages Functions 的 wrangler 配置不支持 send_email 绑定（校验拒绝），
+//   Email Routing 本身已就绪（it-t.xyz 已启用、MX 正常、目的地已验证），发信绑定仅 Workers 可用。
+// 站点绝不出现站长邮箱；from 默认 zhibiao@it-t.xyz。
 
 const MARKETS = ["A股", "港股", "美股", "其他"];
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -150,13 +150,78 @@ export async function onRequestPost(context) {
       `UA：${ua || "（未知）"}\n` +
       `Turnstile：${turnstileOk ? "通过" : "未验证/跳过"}\n` +
       `DB id：${rowId ?? "?"}\n`;
-    const fromAddr = (env.NOTIFY_FROM || "notify@it-t.xyz") + "";
+    const fromAddr = (env.NOTIFY_FROM || "zhibiao@it-t.xyz") + "";
     let emailStatus = "sent";
     let emailError = "";
 
-    // Resend 免费 API（需 RESEND_API_KEY；from 用已验证域，否则用 onboarding 测试地址）
+    // 1) 首选：zhibiao-mailer Worker（Cloudflare Email Service，无需 Resend，不动 MX）
+    //    a) Service 绑定 env.MAILER（preferred，不走公网）；b) 公网 URL + 共享 secret 兜底
     let sent = false;
-    if (env.RESEND_API_KEY) {
+    async function sendViaMailer() {
+      const payload = JSON.stringify({
+        from: fromAddr.includes("it-t.xyz") ? fromAddr : "zhibiao@it-t.xyz",
+        to: OWNER_EMAIL,
+        subject,
+        text,
+      });
+      const secret = (env.MAILER_SECRET || "") + "";
+      if (!secret) return { ok: false, error: "MAILER_SECRET missing" };
+      const headers = {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${secret}`,
+      };
+      // a) Service binding（Pages → Worker，同账号内网直调）
+      if (env.MAILER && typeof env.MAILER.fetch === "function") {
+        try {
+          const r = await env.MAILER.fetch(
+            new Request("https://mailer/send", {
+              method: "POST",
+              headers,
+              body: payload,
+            })
+          );
+          const j = await r.json().catch(() => null);
+          if (r.ok && j && j.ok) return { ok: true, via: "service" };
+          const detail = (j && (j.error || j.code)) || `http ${r.status}`;
+          return { ok: false, error: `mailer service: ${String(detail).slice(0, 200)}` };
+        } catch (e) {
+          return { ok: false, error: `mailer service: ${String(e?.message || e).slice(0, 200)}` };
+        }
+      }
+      // b) 公网 URL 兜底（需 MAILER_URL + MAILER_SECRET；Worker 侧同样验 secret）
+      const base = ((env.MAILER_URL || "") + "").trim().replace(/\/+$/, "");
+      if (base) {
+        try {
+          const r = await fetch(base + "/", {
+            method: "POST",
+            headers,
+            body: payload,
+          });
+          const j = await r.json().catch(() => null);
+          if (r.ok && j && j.ok) return { ok: true, via: "https" };
+          const detail = (j && (j.error || j.code)) || `http ${r.status}`;
+          return { ok: false, error: `mailer https: ${String(detail).slice(0, 200)}` };
+        } catch (e) {
+          return { ok: false, error: `mailer https: ${String(e?.message || e).slice(0, 200)}` };
+        }
+      }
+      return { ok: false, error: "mailer binding/URL missing" };
+    }
+
+    try {
+      const m = await sendViaMailer();
+      if (m.ok) {
+        sent = true;
+        emailError = "";
+      } else {
+        emailError = m.error || "mailer failed";
+      }
+    } catch (e) {
+      emailError = `mailer: ${String(e?.message || e).slice(0, 200)}`;
+    }
+
+    // 2) 可选 fallback：Resend（仅当 RESEND_API_KEY 已设置；免费 100 封/天）
+    if (!sent && env.RESEND_API_KEY) {
       try {
         const from = fromAddr.includes("it-t.xyz")
           ? `指标实验室 <${fromAddr}>`
@@ -174,13 +239,13 @@ export async function onRequestPost(context) {
           emailError = "";
         } else {
           const t = await rr.text().catch(() => "");
-          emailError = `resend ${rr.status}: ${t.slice(0, 200)}`;
+          emailError = `${emailError}; resend ${rr.status}: ${t.slice(0, 150)}`.slice(0, 500);
         }
       } catch (e) {
-        emailError = `resend: ${String(e?.message || e).slice(0, 200)}`;
+        emailError = `${emailError}; resend: ${String(e?.message || e).slice(0, 150)}`.slice(0, 500);
       }
-    } else {
-      emailError = "RESEND_API_KEY missing (free key required; see report)";
+    } else if (!sent && !emailError) {
+      emailError = "mailer failed; RESEND_API_KEY missing";
     }
 
     if (!sent) {

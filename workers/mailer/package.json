@@ -1,0 +1,6 @@
+{
+  "name": "zhibiao-mailer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "zhibiao-lab form notification mailer (Cloudflare Email Service send_email)"
+}
