@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
   title: "老黄测指标",
-  description: "老黄测指标（国内版）：用 A 股历史数据回测散户常用指标，系列「什么指标不赚钱」24 集已测全表，B站视频+文章；栏目「有点苗头」即将上线。",
+  description: "老黄测指标（国内版）：用 A 股历史数据回测散户常用指标，系列「什么指标不赚钱」26 集已测全表，B站视频+文章；栏目「有点苗头」即将上线。",
   alternates: {
     canonical: `${SITE_URL}/`,
     languages: { "zh-CN": `${SITE_URL}/`, zh: `${SITE_URL}/global/`, "x-default": `${SITE_URL}/` },

@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
   title: "Lao Huang Tests Indicators",
-  description: "Lao Huang Tests Indicators (global): backtesting retail indicators with A-share data. Series “什么指标不赚钱” 24 tested, YouTube + articles. Column “有点苗头” coming soon.",
+  description: "Lao Huang Tests Indicators (global): backtesting retail indicators with A-share data. Series “什么指标不赚钱” 26 tested, YouTube + articles. Column “有点苗头” coming soon.",
   alternates: {
     canonical: `${SITE_URL}/global/`,
     languages: { "zh-CN": `${SITE_URL}/`, zh: `${SITE_URL}/global/`, "x-default": `${SITE_URL}/global/` },
