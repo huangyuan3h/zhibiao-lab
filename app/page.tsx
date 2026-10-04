@@ -103,7 +103,7 @@ export default function Home() {
             <h2 className="font-bold">指标打假</h2>
           </div>
           <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
-            拿规则，10秒看是否跑赢瞎买：24规则86组合，扣费后每笔、胜率、随机对照，永久免费。
+            拿规则，10秒看是否跑赢瞎买：24规则86组合（含部分未播新规则，日历类等特殊集见对应集），扣费后每笔、胜率、随机对照，永久免费。
           </p>
           <a href="/check/" className="mt-3 inline-block text-sm font-medium text-[#1E3A5F] hover:underline dark:text-blue-300">
             去打假 →

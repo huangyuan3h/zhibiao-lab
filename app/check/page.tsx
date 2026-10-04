@@ -44,6 +44,9 @@ export default function CheckPage() {
           全部数字来自 A股全市场历史回测（2010-01-01 至 2026-08-31，5000多只含已退市，第二天开盘成交，一字板顺延），
           与系列「什么指标不赚钱」同一口径；有对应集数的直接给B站视频 + 文章链接。作者：躺平的老黄。
         </p>
+        <p className="mt-2 max-w-2xl text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+          数字口径：首页 26 是已播集数，这里 24 是可一键回测的规则数（含部分未播新规则，共 86 种拿法）；国庆节效应等日历类没有可选拿法，不在此工具，见第 3 集，其余特殊口径以对应集文章为准。
+        </p>
       </section>
       <CheckTool edition="china" />
       <section className="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 text-sm leading-relaxed text-neutral-600 sm:p-6 dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-400">

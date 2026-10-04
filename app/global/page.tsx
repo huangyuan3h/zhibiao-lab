@@ -103,7 +103,7 @@ export default function GlobalHome() {
             <h2 className="font-bold">指标打假</h2>
           </div>
           <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
-            Pick a rule, see in 10s if it beats random: 24 rules 86 combos, free forever, YouTube + articles.
+            Pick a rule, see in 10s if it beats random: 24 rules 86 combos (incl. unaired; calendar specials see episodes), free forever, YouTube + articles.
           </p>
           <a href="/global/check/" className="mt-3 inline-block text-sm font-medium text-[#1E3A5F] hover:underline dark:text-blue-300">
             Try it →

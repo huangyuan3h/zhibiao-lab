@@ -44,6 +44,9 @@ export default function GlobalCheckPage() {
           全市场历史回测（2010-01-01 至 2026-08-31，5000多只含已退市），与系列「什么指标不赚钱」同一口径；
           有对应集数的直接给YouTube视频 + 文章链接（隐私增强，点击才加载）。作者：躺平的老黄。
         </p>
+        <p className="mt-2 max-w-2xl text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+          Count note: 26 is aired episodes, 24 here is checkable rules (incl. unaired new rules, 86 combos); calendar specials like the holiday effect have no holding variant — see its episode, other specials follow their articles.
+        </p>
       </section>
       <CheckTool edition="global" />
       <section className="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 text-sm leading-relaxed text-neutral-600 sm:p-6 dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-400">
