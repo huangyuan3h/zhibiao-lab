@@ -16,6 +16,7 @@ export default function SiteHeader() {
 
   const links = [
     { href: `${prefix}/` || "/", label: "首页" },
+    { href: `${prefix}/check/`, label: "指标打假" },
     { href: `${prefix}/leads/`, label: "有苗头" },
     { href: `${prefix}/about/`, label: "方法" },
   ];
@@ -31,7 +32,7 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-neutral-200 bg-white/90 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/90">
       <nav className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4" aria-label="主导航">
-        <Link href={`${prefix}/` || "/"} className="text-[15px] font-bold tracking-tight">
+        <Link href={`${prefix}/` || "/"} className="text-[15px] font-bold tracking-tight text-[#1E3A5F] dark:text-white">
           {edition === "china" ? SITE_NAME : SITE_NAME_EN}
           <span className="ml-2 hidden rounded-full bg-neutral-100 px-2 py-0.5 text-xs font-medium text-neutral-600 sm:inline-block dark:bg-neutral-900 dark:text-neutral-400">
             {edition === "china" ? "国内版" : "海外版"}

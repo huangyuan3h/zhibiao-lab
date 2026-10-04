@@ -50,7 +50,7 @@ export default function YouTubeLite({ videoId, title }: { videoId: string; title
       {watch && (
         <div className="flex items-center justify-between bg-white px-4 py-2 text-sm dark:bg-neutral-950">
           <span className="truncate text-neutral-500">{title}</span>
-          <a href={watch} target="_blank" rel="noreferrer" className="ml-3 shrink-0 text-blue-600 hover:underline">
+          <a href={watch} target="_blank" rel="noreferrer" className="ml-3 shrink-0 text-[#1E3A5F] hover:underline dark:text-blue-300">
             在 YouTube 观看
           </a>
         </div>

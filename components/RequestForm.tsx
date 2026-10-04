@@ -136,7 +136,7 @@ export default function RequestForm() {
                   aria-pressed={market === m}
                   className={`rounded-full border px-4 py-1.5 text-sm ${
                     market === m
-                      ? "border-neutral-900 bg-neutral-900 text-white dark:border-white dark:bg-white dark:text-neutral-900"
+                      ? "border-[#1E3A5F] bg-[#1E3A5F] text-white dark:border-white dark:bg-white dark:text-neutral-900"
                       : "border-neutral-300 text-neutral-600 hover:border-neutral-400 dark:border-neutral-700 dark:text-neutral-300"
                   }`}
                 >

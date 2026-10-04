@@ -71,7 +71,7 @@ export default function GlobalHome() {
             href={PLAYLIST_URL}
             target="_blank"
             rel="noreferrer"
-            className="rounded-lg bg-red-600 px-4 py-2 font-medium text-white hover:bg-red-700"
+            className="rounded-lg bg-[#1E3A5F] px-4 py-2 font-medium text-white hover:bg-[#2F5D8A]"
           >
             ▶ YouTube 播放列表
           </a>
@@ -84,7 +84,7 @@ export default function GlobalHome() {
         </div>
       </section>
 
-      <section aria-label="栏目" className="mb-10 grid gap-3 sm:grid-cols-2">
+      <section aria-label="栏目" className="mb-10 grid gap-3 sm:grid-cols-3">
         <Card className="p-5">
           <div className="flex items-center gap-2">
             <Badge>Series</Badge>
@@ -93,8 +93,20 @@ export default function GlobalHome() {
           <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
             已测 {airedCount} 个指标，全部不赚钱。下表即本系列全集，点任一行看视频 + 文章 + 交互图表。
           </p>
-          <a href="#indicators" className="mt-3 inline-block text-sm font-medium text-blue-600 hover:underline">
+          <a href="#indicators" className="mt-3 inline-block text-sm font-medium text-[#1E3A5F] hover:underline dark:text-blue-300">
             View all ↓
+          </a>
+        </Card>
+        <Card className="border-[#1E3A5F]/20 p-5">
+          <div className="flex items-center gap-2">
+            <Badge>Tool · Free</Badge>
+            <h2 className="font-bold">指标打假</h2>
+          </div>
+          <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+            Pick a rule, see in 10s if it beats random: 24 rules 86 combos, free forever, YouTube + articles.
+          </p>
+          <a href="/global/check/" className="mt-3 inline-block text-sm font-medium text-[#1E3A5F] hover:underline dark:text-blue-300">
+            Try it →
           </a>
         </Card>
         <Card className="p-5 opacity-90">

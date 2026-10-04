@@ -5,7 +5,7 @@ type Variant = "default" | "secondary" | "outline" | "ghost" | "destructive";
 type Size = "sm" | "md" | "lg" | "icon";
 
 const variants: Record<Variant, string> = {
-  default: "bg-neutral-900 text-white hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200",
+  default: "bg-[#1E3A5F] text-white hover:bg-[#2F5D8A] dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200",
   secondary: "bg-neutral-100 text-neutral-900 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-100 dark:hover:bg-neutral-700",
   outline: "border border-neutral-300 bg-white hover:border-neutral-400 dark:border-neutral-700 dark:bg-neutral-950",
   ghost: "hover:bg-neutral-100 dark:hover:bg-neutral-800",

@@ -71,7 +71,7 @@ export default function Home() {
             href="https://www.bilibili.com/video/BV13MaG6MEbE"
             target="_blank"
             rel="noreferrer"
-            className="rounded-lg bg-neutral-900 px-4 py-2 font-medium text-white hover:bg-neutral-700 dark:bg-white dark:text-neutral-900"
+            className="rounded-lg bg-[#1E3A5F] px-4 py-2 font-medium text-white hover:bg-[#2F5D8A]"
           >
             ▶ B站合集（第1集起）
           </a>
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section aria-label="站内栏目" className="mb-10 grid gap-3 sm:grid-cols-2">
+      <section aria-label="站内栏目" className="mb-10 grid gap-3 sm:grid-cols-3">
         <Card className="p-5">
           <div className="flex items-center gap-2">
             <Badge>系列</Badge>
@@ -93,8 +93,20 @@ export default function Home() {
           <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
             已测 {airedCount} 个指标，全部不赚钱。下表即本系列全集，点任一行看视频 + 文章 + 交互图表。
           </p>
-          <a href="#indicators" className="mt-3 inline-block text-sm font-medium text-blue-600 hover:underline">
+          <a href="#indicators" className="mt-3 inline-block text-sm font-medium text-[#1E3A5F] hover:underline dark:text-blue-300">
             看全集 ↓
+          </a>
+        </Card>
+        <Card className="border-[#1E3A5F]/20 p-5">
+          <div className="flex items-center gap-2">
+            <Badge>工具 · 免费</Badge>
+            <h2 className="font-bold">指标打假</h2>
+          </div>
+          <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+            拿规则，10秒看是否跑赢瞎买：24规则86组合，扣费后每笔、胜率、随机对照，永久免费。
+          </p>
+          <a href="/check/" className="mt-3 inline-block text-sm font-medium text-[#1E3A5F] hover:underline dark:text-blue-300">
+            去打假 →
           </a>
         </Card>
         <Card className="p-5 opacity-90">

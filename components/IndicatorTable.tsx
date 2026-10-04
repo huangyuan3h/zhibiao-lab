@@ -77,7 +77,7 @@ export default function IndicatorTable({ items, edition }: { items: Indicator[];
               aria-pressed={verdict === v}
               className={`rounded-full border px-3 py-1 ${
                 verdict === v
-                  ? "border-neutral-900 bg-neutral-900 text-white dark:border-white dark:bg-white dark:text-neutral-900"
+                  ? "border-[#1E3A5F] bg-[#1E3A5F] text-white dark:border-white dark:bg-white dark:text-neutral-900"
                   : "border-neutral-300 bg-white text-neutral-600 dark:border-neutral-700 dark:bg-neutral-950 dark:text-neutral-400"
               }`}
             >
@@ -89,7 +89,7 @@ export default function IndicatorTable({ items, edition }: { items: Indicator[];
             aria-pressed={videoOnly}
             className={`rounded-full border px-3 py-1 ${
               videoOnly
-                ? "border-neutral-900 bg-neutral-900 text-white dark:border-white dark:bg-white dark:text-neutral-900"
+                ? "border-[#1E3A5F] bg-[#1E3A5F] text-white dark:border-white dark:bg-white dark:text-neutral-900"
                 : "border-neutral-300 bg-white text-neutral-600 dark:border-neutral-700 dark:bg-neutral-950 dark:text-neutral-400"
             }`}
             title={edition === "china" ? "只看有B站视频的" : "只看有YouTube视频的"}
@@ -151,7 +151,7 @@ export default function IndicatorTable({ items, edition }: { items: Indicator[];
                 </TableCell>
                 <TableCell className="whitespace-nowrap">
                   {hasVideo(i, edition) ? (
-                    <Link href={`${prefix}/i/${i.id}/`} className="text-blue-600 hover:underline">
+                    <Link href={`${prefix}/i/${i.id}/`} className="text-[#1E3A5F] hover:underline dark:text-blue-300">
                       {edition === "china" ? "B站观看" : "观看"}
                     </Link>
                   ) : (
@@ -174,7 +174,7 @@ export default function IndicatorTable({ items, edition }: { items: Indicator[];
               onClick={() => toggleSort(k)}
               className={`rounded-full border px-2.5 py-1 ${
                 sortKey === k
-                  ? "border-neutral-900 bg-neutral-900 text-white dark:border-white dark:bg-white dark:text-neutral-900"
+                  ? "border-[#1E3A5F] bg-[#1E3A5F] text-white dark:border-white dark:bg-white dark:text-neutral-900"
                   : "border-neutral-300 dark:border-neutral-700"
               }`}
             >

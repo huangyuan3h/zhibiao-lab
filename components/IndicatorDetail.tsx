@@ -110,7 +110,7 @@ export default function IndicatorDetail({ id, edition }: { id: string; edition: 
                     href={watch}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-lg bg-red-600 px-4 py-2 font-medium text-white hover:bg-red-700"
+                    className="rounded-lg bg-[#1E3A5F] px-4 py-2 font-medium text-white hover:bg-[#2F5D8A]"
                   >
                     ▶ 在 YouTube 观看
                   </a>
@@ -120,7 +120,7 @@ export default function IndicatorDetail({ id, edition }: { id: string; edition: 
                     href={i.bili}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-lg bg-neutral-900 px-4 py-2 font-medium text-white hover:bg-neutral-700 dark:bg-white dark:text-neutral-900"
+                    className="rounded-lg bg-[#1E3A5F] px-4 py-2 font-medium text-white hover:bg-[#2F5D8A]"
                   >
                     ▶ 在 B站观看
                   </a>
@@ -144,7 +144,7 @@ export default function IndicatorDetail({ id, edition }: { id: string; edition: 
               <ArticleBody id={i.id} />
               {i.zhihu && (
                 <p className="mt-6 text-sm">
-                  <a href={i.zhihu} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">
+                  <a href={i.zhihu} target="_blank" rel="noreferrer" className="text-[#1E3A5F] hover:underline dark:text-blue-300">
                     在知乎阅读原文 →
                   </a>
                   <span className="ml-2 text-xs text-neutral-400">（来源：{article.source === "zhihu" ? "知乎已发表" : "回测数据摘要"}）</span>
@@ -154,7 +154,7 @@ export default function IndicatorDetail({ id, edition }: { id: string; edition: 
                 想测别的指标？
                 <Link
                   href={edition === "china" ? "/request/" : "/global/request/"}
-                  className="ml-1 font-medium text-blue-600 hover:underline"
+                  className="ml-1 font-medium text-[#1E3A5F] hover:underline dark:text-blue-300"
                 >
                   告诉我们你想测哪个 →
                 </Link>

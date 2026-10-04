@@ -18,7 +18,7 @@ export default function NotFound() {
       <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
         <Link
           href="/"
-          className="rounded-lg bg-neutral-900 px-4 py-2 font-medium text-white hover:bg-neutral-700 dark:bg-white dark:text-neutral-900"
+          className="rounded-lg bg-[#1E3A5F] px-4 py-2 font-medium text-white hover:bg-[#2F5D8A]"
         >
           回国内版首页
         </Link>
@@ -28,7 +28,7 @@ export default function NotFound() {
         >
           去海外版首页
         </Link>
-        <Link href="/request/" className="rounded-lg px-4 py-2 font-medium text-blue-600 hover:underline">
+        <Link href="/request/" className="rounded-lg px-4 py-2 font-medium text-[#1E3A5F] hover:underline dark:text-blue-300">
           我想测的指标 →
         </Link>
       </div>

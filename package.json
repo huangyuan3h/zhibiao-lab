@@ -7,7 +7,7 @@
     "build": "next build",
     "preview": "npx serve ./out -l 3000",
     "update-data": "node scripts/update-data.mjs",
-    "test": "node scripts/test-request-validation.mjs && node scripts/test-rebrand.mjs",
+    "test": "node scripts/test-request-validation.mjs && node scripts/test-rebrand.mjs && node scripts/test-check.mjs",
     "requests:summary": "node scripts/requests-summary.mjs",
     "analytics:report": "python3 scripts/analytics_report.py --days 7"
   },
@@ -25,6 +25,7 @@
     "@types/node": "22.18.0",
     "@types/react": "19.1.13",
     "@types/react-dom": "19.1.9",
+    "playwright": "^1.63.0",
     "tailwindcss": "4.1.13",
     "typescript": "5.9.2"
   }

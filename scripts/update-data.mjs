@@ -216,3 +216,12 @@ try {
 } catch (e) {
   console.error(`update-data: build-charts 失败（不致命，先用旧图表）：${e.message}`);
 }
+
+// 打假栏目：只读 karios-series-output/*/summary.json（跳过 _ 开头目录），
+// 链接仅用已发布（bili_ready 已发布 + yt public，见 data/indicators.json 已同步结果），
+// 输出 data/check-summary.json + public/data/check-summary.json，/check/ 与 /global/check/ 直接复用
+try {
+  execSync("python3 scripts/build-check-summary.py", { cwd: resolve(HERE, ".."), stdio: "inherit" });
+} catch (e) {
+  console.error(`update-data: build-check-summary 失败（不致命，先用旧打假数据）：${e.message}`);
+}

@@ -49,7 +49,7 @@ export default function GlobalLeadsPage() {
       </div>
       <p className="mt-6 text-sm text-neutral-500">
         共性：超跌/抄底类每笔有优势，追涨类普遍输给随机；但组合层面仍亏，需解决仓位与择时。
-        <Link href="/global/about/" className="text-blue-600 hover:underline">
+        <Link href="/global/about/" className="text-[#1E3A5F] hover:underline dark:text-blue-300">
           查看回测方法
         </Link>
       </p>

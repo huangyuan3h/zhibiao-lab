@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03",
+  "generated": "2026-10-04",
   "method": "hold5为主口径（特别注明除外），次日开盘买、拿满5个交易日后开盘卖，往返扣费0.30%，与随机买入对照（事件层1000次/组合层200次）",
   "playlist": "https://www.youtube.com/playlist?list=PLJ8z9DDMq_Yg",
   "indicators": [
@@ -96,7 +96,7 @@
       "verdict": "不赚钱",
       "winRate": 42.92,
       "youtube": "AUYL-wKPId0",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2089446867826483334"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1mday6sE4i",
@@ -115,7 +115,7 @@
       "verdict": "不赚钱",
       "winRate": 57.47,
       "youtube": "VCr0NjwI14A",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2089808730745587570"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1YYaS61EYC",
@@ -156,7 +156,7 @@
       "zhihu": "https://zhuanlan.zhihu.com/p/2087999691552186827"
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1snHv6wEV9",
       "ep": 9,
       "eventPct": 15.8,
       "example": null,
@@ -175,7 +175,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1WeHr62Ecz",
       "ep": 10,
       "eventPct": 0,
       "example": null,
@@ -194,7 +194,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1cRHL6MEvi",
       "ep": 11,
       "eventPct": 0,
       "example": {

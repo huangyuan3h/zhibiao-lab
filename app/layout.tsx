@@ -76,7 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen bg-neutral-50 text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100">
+      <body className="min-h-screen bg-[#FAF7F2] text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100">
         <SiteHeader />
         <main className="mx-auto max-w-5xl px-4 py-8 sm:py-10">{children}</main>
         <SiteFooter />

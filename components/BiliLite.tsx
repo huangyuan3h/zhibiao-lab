@@ -28,10 +28,10 @@ export default function BiliLite({ biliUrl, title }: { biliUrl: string; title: s
     <div className="overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-800">
       <button
         onClick={() => setPlay(true)}
-        className="relative block w-full bg-neutral-900 text-left"
+        className="relative block w-full bg-[#1E3A5F] text-left"
         aria-label={`播放B站视频：${title}`}
       >
-        <div className="flex aspect-video w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white">
+        <div className="flex aspect-video w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-[#1E3A5F] via-[#2F5D8A] to-[#1E3A5F] text-white">
           <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/15 text-2xl">
             ▶
           </span>
@@ -44,7 +44,7 @@ export default function BiliLite({ biliUrl, title }: { biliUrl: string; title: s
       </button>
       <div className="flex items-center justify-between bg-white px-4 py-2 text-sm dark:bg-neutral-950">
         <span className="truncate text-neutral-500">B站视频 {bvid}</span>
-        <a href={biliUrl} target="_blank" rel="noreferrer" className="ml-3 shrink-0 text-blue-600 hover:underline">
+        <a href={biliUrl} target="_blank" rel="noreferrer" className="ml-3 shrink-0 text-[#1E3A5F] hover:underline dark:text-blue-300">
           在 B站观看
         </a>
       </div>

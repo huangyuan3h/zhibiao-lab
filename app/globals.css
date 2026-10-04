@@ -5,7 +5,11 @@
 @theme inline {
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
-  --color-accent: #1a73e8;
+  --color-accent: #1E3A5F;
+  --color-primary: #1E3A5F;
+  --color-primary-hover: #2F5D8A;
+  --color-keynum: #B45309;
+  --color-warm-bg: #FAF7F2;
 }
 
 :root {
@@ -37,11 +41,11 @@ body {
 .article-body ol { list-style: decimal; }
 .article-body li { margin: 0.35rem 0; }
 .article-body blockquote {
-  border-left: 3px solid #e5e5e5;
+  border-left: 3px solid #d8cfc2;
   padding: 0.2rem 0 0.2rem 1rem;
   margin: 1rem 0;
   color: #555;
-  background: #fafafa;
+  background: #FAF7F2;
   border-radius: 0 0.5rem 0.5rem 0;
 }
 .dark .article-body blockquote { background: #111; border-color: #333; color: #bbb; }
@@ -54,7 +58,7 @@ body {
 .dark .article-body code { background: #222; }
 .article-body pre { background: #f4f4f5; padding: 1rem; border-radius: 0.75rem; overflow-x: auto; }
 .dark .article-body pre { background: #111; }
-.article-body a { color: #1a73e8; text-decoration: underline; text-underline-offset: 3px; }
+.article-body a { color: #1E3A5F; text-decoration: underline; text-underline-offset: 3px; }
 .article-body hr { margin: 2rem 0; border-color: #e5e5e5; }
 .dark .article-body hr { border-color: #333; }
 .article-body strong { font-weight: 700; }

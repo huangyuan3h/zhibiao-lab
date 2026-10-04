@@ -21,6 +21,12 @@ export default function SiteFooter() {
             海外版（YouTube）
           </Link>
           <Link
+            href={isGlobal ? "/global/check/" : "/check/"}
+            className="hover:text-neutral-900 dark:hover:text-white"
+          >
+            指标打假
+          </Link>
+          <Link
             href={isGlobal ? "/global/leads/" : "/leads/"}
             className="hover:text-neutral-900 dark:hover:text-white"
           >
