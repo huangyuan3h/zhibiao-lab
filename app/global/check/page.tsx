@@ -45,7 +45,7 @@ export default function GlobalCheckPage() {
           有对应集数的直接给YouTube视频 + 文章链接（隐私增强，点击才加载）。作者：躺平的老黄。
         </p>
         <p className="mt-2 max-w-2xl text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
-          Count note: 26 is aired episodes, 24 here is checkable rules (incl. unaired new rules, 86 combos); calendar specials like the holiday effect have no holding variant — see its episode, other specials follow their articles.
+          Count note: 43 is aired episodes, 24 here is checkable rules (incl. unaired new rules, 86 combos); calendar specials like the holiday effect have no holding variant — see its episode, other specials follow their articles.
         </p>
       </section>
       <CheckTool edition="global" />

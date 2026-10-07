@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04",
+  "generated": "2026-10-07",
   "method": "hold5为主口径（特别注明除外），次日开盘买、拿满5个交易日后开盘卖，往返扣费0.30%，与随机买入对照（事件层1000次/组合层200次）",
   "playlist": "https://www.youtube.com/playlist?list=PLJ8z9DDMq_Yg",
   "indicators": [
@@ -134,7 +134,7 @@
       "verdict": "不赚钱",
       "winRate": 44.94,
       "youtube": "-ofYWbZj32A",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2090517092881776991"
     },
     {
       "bili": "https://www.bilibili.com/video/BV11oHY6fEW6",
@@ -172,7 +172,7 @@
       "verdict": "不赚钱",
       "winRate": 44.93,
       "youtube": "J-H-IwSMGxY",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2090519280316170588"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1WeHr62Ecz",
@@ -191,7 +191,7 @@
       "verdict": "不赚钱",
       "winRate": 41.49,
       "youtube": "C3ZAB2gyZ9A",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2090789224899416111"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1cRHL6MEvi",
@@ -216,7 +216,7 @@
       "zhihu": "https://zhuanlan.zhihu.com/p/2088358961862930692"
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV16LH46YEWc",
       "ep": 12,
       "eventPct": 0,
       "example": {
@@ -235,10 +235,10 @@
       "verdict": "不赚钱",
       "winRate": 44.42,
       "youtube": "pHrfHv6ygZc",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2090880959025618983"
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV17EH46hERx",
       "ep": 14,
       "eventPct": 0,
       "example": {
@@ -260,7 +260,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV13MHZ6zE2p",
       "ep": 15,
       "eventPct": 0,
       "example": {
@@ -282,7 +282,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1GLpw6nEAP",
       "ep": 16,
       "eventPct": 0,
       "example": {
@@ -344,7 +344,7 @@
       "trades": null,
       "verdict": "不赚钱",
       "winRate": 43.34,
-      "youtube": null,
+      "youtube": "jUPIPkdBVTE",
       "zhihu": null
     },
     {
@@ -503,6 +503,116 @@
     },
     {
       "bili": null,
+      "ep": 26,
+      "eventPct": 0,
+      "example": {
+        "stock": "中国平安 601318.SH",
+        "detail": "窗内2笔一赚一亏：09-25信号→09-26开盘42.56买→10-10赚18.70% / 12-10信号→12-11开盘50.55买→12-18亏4.40%"
+      },
+      "id": "gap_up_chase",
+      "median": -0.87,
+      "name": "跳空高开追涨",
+      "note": "例子：中国平安 601318.SH（窗内2笔一赚一亏）。",
+      "perTrade": -0.19,
+      "portfolio": -34.83,
+      "portfolioPct": 0,
+      "title": "跳空高开追进去，真能吃到惯性吗？",
+      "trades": 195285,
+      "verdict": "不赚钱",
+      "winRate": 45.24,
+      "youtube": "tqRJVKEws00",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 27,
+      "eventPct": 0,
+      "example": {
+        "stock": "比亚迪 002594.SZ",
+        "detail": "窗内1笔亏7.28%：09-30信号→10-09开盘103.38买→10-16走"
+      },
+      "id": "big_yang_chase",
+      "median": -1.36,
+      "name": "大阳线追涨",
+      "note": "例子：比亚迪 002594.SZ（窗内1笔亏7.28%）。",
+      "perTrade": -0.58,
+      "portfolio": -45.79,
+      "portfolioPct": 0,
+      "title": "大阳线出现就追，十年下来真能赚钱吗？",
+      "trades": 162193,
+      "verdict": "不赚钱",
+      "winRate": 43.29,
+      "youtube": "ifemn35BbvE",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 28,
+      "eventPct": 0,
+      "example": {
+        "stock": "格力电器 000651.SZ",
+        "detail": "窗内5笔全赚：+0.57% / +1.02% / +0.08% / +6.45% / +1.36%"
+      },
+      "id": "sar_bullish",
+      "median": -0.61,
+      "name": "SAR翻红",
+      "note": "例子：格力电器 000651.SZ（窗内5笔全赚，单笔赚但全市场大亏）。",
+      "perTrade": -0.11,
+      "portfolio": -35.46,
+      "portfolioPct": 0,
+      "title": "SAR翻红追进去，真能吃到趋势吗？",
+      "trades": 278008,
+      "verdict": "不赚钱",
+      "winRate": 45.23,
+      "youtube": "IuxsNsAMF0c",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 29,
+      "eventPct": 0,
+      "example": {
+        "stock": "保利发展 600048.SH",
+        "detail": "窗内1笔亏3.26%：11-06信号→11-07开盘10.85买→11-14走"
+      },
+      "id": "boll_upper_chase",
+      "median": -1.16,
+      "name": "布林线上轨追涨",
+      "note": "例子：保利发展 600048.SH（窗内1笔亏3.26%）。",
+      "perTrade": -0.47,
+      "portfolio": -45.65,
+      "portfolioPct": 0,
+      "title": "布林线上轨一碰就追，真能吃到主升吗？",
+      "trades": 183547,
+      "verdict": "不赚钱",
+      "winRate": 42.23,
+      "youtube": "InDRSnIxYGM",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 30,
+      "eventPct": 0,
+      "example": {
+        "stock": "上汽集团 600104.SH",
+        "detail": "窗内2笔双亏：10-08信号→10-09开盘14.27买→10-16亏11.32% / 11-13信号→11-14开盘16.49买→11-21亏0.95%"
+      },
+      "id": "rsi_overbought_chase",
+      "median": -2.79,
+      "name": "RSI超买追涨",
+      "note": "例子：上汽集团 600104.SH（窗内2笔双亏）。",
+      "perTrade": -1.7,
+      "portfolio": -47.89,
+      "portfolioPct": 0,
+      "title": "RSI冲上80还追，追的是肉还是套？",
+      "trades": 26386,
+      "verdict": "不赚钱",
+      "winRate": 37.71,
+      "youtube": "N-REjUOto3o",
+      "zhihu": null
+    },
+    {
+      "bili": null,
       "ep": 31,
       "eventPct": 0,
       "example": {
@@ -547,6 +657,270 @@
     },
     {
       "bili": null,
+      "ep": 33,
+      "eventPct": 0,
+      "example": {
+        "stock": "TCL科技 000100.SZ",
+        "detail": "窗内1笔亏4.93%：10-09信号→10-10开盘4.19买→10-17走"
+      },
+      "id": "limitdown_pry_dip",
+      "median": 0.12,
+      "name": "跌停撬板抄底",
+      "note": "例子：TCL科技 000100.SZ（窗内1笔亏4.93%）。",
+      "perTrade": -0.15,
+      "portfolio": -36.41,
+      "portfolioPct": 0,
+      "title": "跌停撬开真是地板价吗？",
+      "trades": 37982,
+      "verdict": "不赚钱",
+      "winRate": 50.45,
+      "youtube": "HtDKejIIcMA",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 34,
+      "eventPct": 0,
+      "example": {
+        "stock": "福莱特 601865.SH",
+        "detail": "窗内2笔双亏：09-30信号→10-09开盘21.23买→10-16亏15.63% / 10-28信号→10-29开盘28.71买→11-05亏12.87%"
+      },
+      "id": "limitup_highopen_chase",
+      "median": -2.58,
+      "name": "涨停高开追涨",
+      "note": "例子：福莱特 601865.SH（窗内2笔双亏）。",
+      "perTrade": -1.44,
+      "portfolio": -47.39,
+      "portfolioPct": 0,
+      "title": "涨停第二天高开3%能追吗？",
+      "trades": 14909,
+      "verdict": "不赚钱",
+      "winRate": 40.6,
+      "youtube": "QrGZawEjkBI",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 35,
+      "eventPct": 0,
+      "example": {
+        "stock": "中国中车 601766.SH",
+        "detail": "窗内5笔全亏：-3.80% / -4.45% / -4.80% / -6.70% / -3.90%"
+      },
+      "id": "breakout_250d_high",
+      "median": -1.3,
+      "name": "突破年线追涨",
+      "note": "例子：中国中车 601766.SH（窗内5笔全亏）。",
+      "perTrade": -0.42,
+      "portfolio": -47.21,
+      "portfolioPct": 0,
+      "title": "突破年线追进去，真能坐上牛车吗？",
+      "trades": 100644,
+      "verdict": "不赚钱",
+      "winRate": 43.21,
+      "youtube": "2O_rFytSrmE",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 36,
+      "eventPct": 0,
+      "example": {
+        "stock": "平安银行 000001.SZ",
+        "detail": "窗内1笔赚7.74%：09-26信号→09-27开盘9.99买→10-11走"
+      },
+      "id": "bias_high_chase",
+      "median": -1.81,
+      "name": "高乖离追涨",
+      "note": "例子：平安银行 000001.SZ（窗内1笔赚7.74%）。",
+      "perTrade": -0.81,
+      "portfolio": -52.23,
+      "portfolioPct": 0,
+      "title": "乖离太大追进去，真能吃到惯性吗？",
+      "trades": 129164,
+      "verdict": "不赚钱",
+      "winRate": 41.43,
+      "youtube": "7AaHibcs-6g",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 37,
+      "eventPct": 0,
+      "example": {
+        "stock": "浪潮信息 000977.SZ",
+        "detail": "窗内1笔大赚23.06%：09-20信号→09-23开盘32.02买→09-30走"
+      },
+      "id": "obv_breakout_chase",
+      "median": -0.66,
+      "name": "OBV突破追涨",
+      "note": "例子：浪潮信息 000977.SZ（窗内1笔大赚23.06%）。",
+      "perTrade": -0.19,
+      "portfolio": -29.74,
+      "portfolioPct": 0,
+      "title": "OBV创新高追进去，真能先人一步吗？",
+      "trades": 149577,
+      "verdict": "不赚钱",
+      "winRate": 44.59,
+      "youtube": "NBiz_YoBgng",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 38,
+      "eventPct": 9.8,
+      "example": {
+        "stock": "国电南瑞 600406.SH",
+        "detail": "窗内2笔一赚一亏：08-23信号→08-26开盘23.76买→赚3.15% / 12-19信号→12-20开盘25.09买→亏1.02%"
+      },
+      "id": "trix_golden_chase",
+      "median": -0.63,
+      "name": "TRIX金叉追涨",
+      "note": "例子：国电南瑞 600406.SH（窗内2笔一赚一亏）。",
+      "perTrade": -0.12,
+      "portfolio": -24.67,
+      "portfolioPct": 13.5,
+      "title": "TRIX金叉追进去，真能过滤假信号吗？",
+      "trades": 181856,
+      "verdict": "不赚钱",
+      "winRate": 45.09,
+      "youtube": "fZuDTT6wOQk",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 39,
+      "eventPct": 91.6,
+      "example": {
+        "stock": "海康威视 002415.SZ",
+        "detail": "窗内1笔亏2.58%：08-14信号→08-15开盘27.16买→08-22走"
+      },
+      "id": "bottom_doji",
+      "median": -0.57,
+      "name": "底部十字星",
+      "note": "例子：海康威视 002415.SZ（窗内1笔亏2.58%）。",
+      "perTrade": -0.33,
+      "portfolio": -16.62,
+      "portfolioPct": 2.5,
+      "title": "底部十字星出现就能抄底吗？",
+      "trades": 34246,
+      "verdict": "不赚钱",
+      "winRate": 45.59,
+      "youtube": "4y9WX7CwV20",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 40,
+      "eventPct": 0,
+      "example": {
+        "stock": "深科技 000021.SZ",
+        "detail": "窗内1笔大亏11.85%：10-30信号→10-31开盘22.95买→11-07走"
+      },
+      "id": "shrink_limitup",
+      "median": -3.05,
+      "name": "缩量涨停追涨",
+      "note": "例子：深科技 000021.SZ（窗内1笔大亏11.85%）。",
+      "perTrade": -1.43,
+      "portfolio": -59.12,
+      "portfolioPct": 0,
+      "title": "缩量涨停更能涨？追进去真能吃肉吗？",
+      "trades": 24379,
+      "verdict": "不赚钱",
+      "winRate": 39.9,
+      "youtube": "RTmbTKex65o",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 41,
+      "eventPct": 0.9,
+      "example": {
+        "stock": "凯盛科技 600552.SH",
+        "detail": "窗内1笔小亏1.39%：08-09信号→08-12开盘10.12买→08-19走"
+      },
+      "id": "tower_bottom",
+      "median": -1.23,
+      "name": "塔形底",
+      "note": "例子：凯盛科技 600552.SH（窗内1笔小亏1.39%）。",
+      "perTrade": -0.52,
+      "portfolio": -7.71,
+      "portfolioPct": 0,
+      "title": "塔形底走出来就是反转吗？",
+      "trades": 3319,
+      "verdict": "不赚钱",
+      "winRate": 41.73,
+      "youtube": "gKm_QHQ5stU",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 42,
+      "eventPct": 0,
+      "example": {
+        "stock": "南玻A 000012.SZ",
+        "detail": "窗内1笔大亏10.01%：10-08信号→10-09开盘5.87买→10-16走"
+      },
+      "id": "jia_yin_zhen_yang",
+      "median": -1.18,
+      "name": "假阴真阳",
+      "note": "例子：南玻A 000012.SZ（窗内1笔大亏10.01%）。",
+      "perTrade": -0.52,
+      "portfolio": -31.77,
+      "portfolioPct": 0,
+      "title": "假阴真阳出现就买，主力吸筹了吗？",
+      "trades": 37903,
+      "verdict": "不赚钱",
+      "winRate": 42.17,
+      "youtube": "0XEjpV1GOPg",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 43,
+      "eventPct": 0,
+      "example": {
+        "stock": "中航光电 002179.SZ",
+        "detail": "窗内1笔小亏1.54%：09-06信号→09-09开盘35.95买→09-18走"
+      },
+      "id": "expma_golden_cross",
+      "median": -0.84,
+      "name": "EXPMA金叉",
+      "note": "例子：中航光电 002179.SZ（窗内1笔小亏1.54%）。",
+      "perTrade": -0.56,
+      "portfolio": -29.72,
+      "portfolioPct": 0,
+      "title": "EXPMA金叉追进去，真比均线金叉强吗？",
+      "trades": 80977,
+      "verdict": "不赚钱",
+      "winRate": 42.88,
+      "youtube": "T1d4fjXRcVs",
+      "zhihu": null
+    },
+    {
+      "bili": null,
+      "ep": 44,
+      "eventPct": 0,
+      "example": {
+        "stock": "江铃汽车 000550.SZ",
+        "detail": "窗内1笔大亏11.30%：11-12信号→11-13开盘27.02买→11-20走"
+      },
+      "id": "weekly_daily_macd_resonance",
+      "median": -0.93,
+      "name": "周线日线MACD共振",
+      "note": "例子：江铃汽车 000550.SZ（窗内1笔大亏11.30%）。",
+      "perTrade": -0.39,
+      "portfolio": -39.78,
+      "portfolioPct": 0,
+      "title": "周线日线MACD共振，双周期一齐金叉就能上吗？",
+      "trades": 124919,
+      "verdict": "不赚钱",
+      "winRate": 42.97,
+      "youtube": "ZlevWUXmoTI",
+      "zhihu": null
+    },
+    {
+      "bili": null,
       "ep": null,
       "eventPct": null,
       "example": null,
@@ -579,25 +953,6 @@
       "title": null,
       "trades": null,
       "verdict": "有苗头",
-      "winRate": null,
-      "youtube": null,
-      "zhihu": null
-    },
-    {
-      "bili": null,
-      "ep": null,
-      "eventPct": null,
-      "example": null,
-      "id": "bottom_doji",
-      "median": null,
-      "name": "底部十字星",
-      "note": "ep24候选3 screened。hold5每笔-0.33%、组合-16.62%。",
-      "perTrade": -0.33,
-      "portfolio": -16.62,
-      "portfolioPct": null,
-      "title": null,
-      "trades": null,
-      "verdict": "只研究",
       "winRate": null,
       "youtube": null,
       "zhihu": null
@@ -731,25 +1086,6 @@
       "title": null,
       "trades": null,
       "verdict": "有苗头",
-      "winRate": null,
-      "youtube": null,
-      "zhihu": null
-    },
-    {
-      "bili": null,
-      "ep": null,
-      "eventPct": null,
-      "example": null,
-      "id": "sar_bullish",
-      "median": null,
-      "name": "SAR翻红",
-      "note": "ep24候选2 screened。hold5每笔-0.11%、组合-35.46%。",
-      "perTrade": -0.11,
-      "portfolio": -35.46,
-      "portfolioPct": null,
-      "title": null,
-      "trades": null,
-      "verdict": "只研究",
       "winRate": null,
       "youtube": null,
       "zhihu": null
