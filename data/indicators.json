@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09",
+  "generated": "2026-10-13",
   "method": "hold5为主口径（特别注明除外），次日开盘买、拿满5个交易日后开盘卖，往返扣费0.30%，与随机买入对照（事件层1000次/组合层200次）",
   "playlist": "https://www.youtube.com/playlist?list=PLJ8z9DDMq_Yg",
   "indicators": [
@@ -323,7 +323,7 @@
       "verdict": "不赚钱",
       "winRate": 44.04,
       "youtube": "CR2JcEWp6rI",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2091966851014309032"
     },
     {
       "bili": null,
@@ -344,8 +344,8 @@
       "trades": null,
       "verdict": "不赚钱",
       "winRate": 43.34,
-      "youtube": "jUPIPkdBVTE",
-      "zhihu": null
+      "youtube": null,
+      "zhihu": "https://zhuanlan.zhihu.com/p/2092264975897192228"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1hWHC6wECz",
@@ -367,7 +367,7 @@
       "verdict": "不赚钱",
       "winRate": 42.54,
       "youtube": "5m16VUZMfPE",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2092387018714112386"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1LKHD6oENk",
@@ -389,7 +389,7 @@
       "verdict": "不赚钱",
       "winRate": 45.07,
       "youtube": "fc02p-YV46k",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2092388126702434082"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1CGHQ6rEU8",
@@ -411,10 +411,10 @@
       "verdict": "不赚钱",
       "winRate": 41.92,
       "youtube": "fFpTRyc_6Xo",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2092711549228078039"
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1vZpb6iEBy",
       "ep": 22,
       "eventPct": 0,
       "example": {
@@ -433,10 +433,10 @@
       "verdict": "不赚钱",
       "winRate": 41.02,
       "youtube": "U2GvOdTQYg4",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2092733865219601219"
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1XAp86wE92",
       "ep": 23,
       "eventPct": 0,
       "example": {
@@ -455,10 +455,10 @@
       "verdict": "不赚钱",
       "winRate": 40.42,
       "youtube": "8AYDN9GfsU8",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2092986791661941460"
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1Cepi6NECj",
       "ep": 24,
       "eventPct": 0,
       "example": {
@@ -477,10 +477,10 @@
       "verdict": "不赚钱",
       "winRate": 42.63,
       "youtube": "SGytucVieKE",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2093095141133308996"
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV12ypG6gEzu",
       "ep": 25,
       "eventPct": 0,
       "example": {
@@ -502,7 +502,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1FtpE6jEvX",
       "ep": 26,
       "eventPct": 0,
       "example": {
@@ -524,7 +524,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1Jmp76CEHZ",
       "ep": 27,
       "eventPct": 0,
       "example": {
@@ -546,7 +546,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1sBpQ6mEXa",
       "ep": 28,
       "eventPct": 0,
       "example": {
@@ -568,7 +568,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1CKp967EPx",
       "ep": 29,
       "eventPct": 0,
       "example": {
@@ -806,7 +806,7 @@
       "trades": 34246,
       "verdict": "不赚钱",
       "winRate": 45.59,
-      "youtube": "4y9WX7CwV20",
+      "youtube": null,
       "zhihu": null
     },
     {
@@ -984,6 +984,176 @@
       "winRate": 43.26,
       "youtube": "qG5uzWNz9Yc",
       "zhihu": null
+    },
+    {
+      "id": "cb_double_low",
+      "name": "可转债「双低」轮动",
+      "ep": 48,
+      "title": "可转债「双低」轮动，真是稳稳的幸福吗？",
+      "verdict": "有苗头",
+      "perTrade": null,
+      "median": null,
+      "winRate": null,
+      "portfolio": 59.2,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": 271,
+      "example": null,
+      "youtube": "DvCuXI2SFFM",
+      "zhihu": null,
+      "bili": null,
+      "note": "可转债周频口径（价格+转股溢价率取最低20%、等权、单边约20bp），不是股票那种拿五天的测法。长窗双低约+59.2%、同门等权约+18.8%（超额约+18.3%），表面有优势；但分段里有的样本外涨得多、验证期却转弱，成本加到约40bp超额会转负，近一两年也变钝。系列视频按严格线判不通过，站内标「有苗头」供继续研究，不构成投资建议。"
+    },
+    {
+      "id": "small_cap_monthly",
+      "name": "小市值月频（小盘溢价）",
+      "ep": 49,
+      "title": "小市值月频换仓，小盘溢价还在吗？",
+      "verdict": "有苗头",
+      "perTrade": null,
+      "median": null,
+      "winRate": null,
+      "portfolio": 276,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": null,
+      "example": null,
+      "youtube": "51e04Tv6pCk",
+      "zhihu": null,
+      "bili": null,
+      "note": "小市值月频换仓口径（非股票拿五天）。样本外某段曾到约+276%（对中证500约+30.6%），看着很猛；但训练期接近归零，验证期约-38.5%大亏，换成交门槛或池子大小后验证期仍崩。系列视频按严格线判不通过，站内标「有苗头」供继续研究，不构成投资建议。"
+    },
+    {
+      "id": "index_ma_timing",
+      "name": "指数均线多空择时",
+      "ep": 50,
+      "title": "指数均线多空择时，站上MA就能满仓吗？",
+      "verdict": "不赚钱",
+      "perTrade": null,
+      "median": null,
+      "winRate": null,
+      "portfolio": null,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": null,
+      "example": {
+        "stock": "沪深300指数",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "yzJO6OFqJ0g",
+      "zhihu": null,
+      "bili": null,
+      "note": "沪深300收盘站上均线满仓、跌破空仓，60日、120日、200日三档都测了，信号第二天才生效。账本里连切换成本都没扣，已经是最好的情况，按手册往返约0.30%一扣更亏。样本外均线60是-6.6%对+20.3%，均线120是+0.2%对+20.3%，均线200是-3.2%对+20.3%，三档样本外就跑输约20个百分点；训练期-5.1%、+2.1%、+1.8%对+14.8%，也跑输；验证期-14.5%、-5.7%、-2.7%全负，留出期-7.8%、-7.2%、-7.2%全负。例子用沪深300指数这类公开名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
+    },
+    {
+      "id": "alpha_momentum",
+      "name": "动量因子",
+      "ep": 51,
+      "title": "动量因子还能吃吗？过去涨的继续涨，在 A 股灵不灵",
+      "verdict": "不赚钱",
+      "perTrade": null,
+      "median": null,
+      "winRate": null,
+      "portfolio": null,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": null,
+      "example": {
+        "stock": "立讯精密",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "pqreKWyUqeM",
+      "zhihu": null,
+      "bili": null,
+      "note": "过去20天涨得最好的两成，下个月持有，等权，每月往返约0.30%。池子是主板加创业加科创，含退市，剔北交所，上市满250天，前20天日均成交额达标才算。长窗+29.3%对沪深300的+30.8%，跑输1.5个百分点，对中证500的+76.3%跑输约47个百分点。样本外+29.2%对+18.6%单窗好看，验证期-21.9%对-0.7%崩盘，留出期-0.3%对-1.6%微赢。分段看2010年超额约+19.0个百分点、2014年约+79.4个百分点、2018年约-20.0个百分点、2022年约-36.7个百分点，前赢后输。60日、120日拿久的长窗更好看，但近年全崩，只当弱线索，主结论仍不赚钱。例子用立讯精密这类过去涨过的公开名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
+    },
+    {
+      "id": "alpha_reversal",
+      "name": "反转因子",
+      "ep": 52,
+      "title": "反转因子是捡钱还是接刀？超跌反弹在全市场回测里怎样",
+      "verdict": "不赚钱",
+      "perTrade": null,
+      "median": null,
+      "winRate": null,
+      "portfolio": null,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": null,
+      "example": {
+        "stock": "隆基绿能",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "gCARPMiB3j0",
+      "zhihu": null,
+      "bili": null,
+      "note": "过去1天跌得最惨的两成，第二天去抢，等权，每天往返0.30%。长窗基本亏光，对沪深300的+30.8%跑输约130.8个百分点，不扣费的毛收益约-87.9%也大亏。样本外-41.0%对+18.6%，验证期-45.0%对-0.7%，留出期-5.7%对-3.9%，三窗全输，不扣费看着赚的扣完也变亏。四个时代全输，滚动看从没正过。拿1天亏，拿5天不扣费赚扣完近零，拿20天拿久表面赚，只当弱线索，主结论仍不赚钱。例子用隆基绿能这类前一天跌惨的公开名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
+    },
+    {
+      "id": "earnings_preview",
+      "name": "业绩预告",
+      "ep": 53,
+      "title": "业绩预告说增长，公告后买5天真能赚钱吗？",
+      "verdict": "不赚钱",
+      "perTrade": null,
+      "median": null,
+      "winRate": null,
+      "portfolio": null,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": null,
+      "example": {
+        "stock": "中国核电",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "kHVajcVUDrQ",
+      "zhihu": null,
+      "bili": null,
+      "note": "预增、扭亏、略增公告后持有5天，下个交易日开盘买到第5天收盘，一扣约0.32%。利好组样本外每笔+2.22%（1967笔，胜率64.7%）单窗好看，训练期每笔-0.12%（1182笔）归零，验证期每笔-4.01%（969笔，胜率34.2%）反向崩盘，留出期无样本，长窗每笔-2.86%（8330笔，胜率39.4%）长期亏。利空组和全部放在一起也是样本外好看、验证期崩，同向反向。例子用中国核电这类出预告说增长的公开名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
+    },
+    {
+      "id": "alpha_turnover",
+      "name": "换手率与流动性",
+      "ep": 54,
+      "title": "换手率与流动性因子：越热越该买，还是越该躲",
+      "verdict": "不赚钱",
+      "perTrade": null,
+      "median": null,
+      "winRate": null,
+      "portfolio": null,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": null,
+      "example": {
+        "stock": "紫金矿业",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "B1eBgso9rMQ",
+      "zhihu": null,
+      "bili": null,
+      "note": "过去1天成交额最大的两成，也就是最热的，第二天去追，等权，每天往返0.30%。长窗基本亏光，对沪深300的+30.8%跑输约130.8个百分点，不扣费的毛收益约-28.2%也亏。样本外-52.5%对+18.6%，训练期-29.0%对+0.1%，验证期-32.6%对-0.7%，留出期-15.0%对-3.9%，三窗全输。四个时代全输，滚动看从没正过，成本降到0.15%仍大亏。按月换最热的长窗曾赢，但近年输，只当弱线索，主结论仍不赚钱。例子用紫金矿业这类昨天最热的公开名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
+    },
+    {
+      "id": "alpha_price_volume",
+      "name": "价量配合",
+      "ep": 55,
+      "title": "价量配合那些「量价齐升」公式，量化里还能信吗",
+      "verdict": "不赚钱",
+      "perTrade": null,
+      "median": null,
+      "winRate": null,
+      "portfolio": null,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": null,
+      "example": {
+        "stock": "恒瑞医药",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "T2lQ9j2lV5c",
+      "zhihu": null,
+      "bili": null,
+      "note": "收盘涨、而且量大于过去20天均量1.5倍，下个交易日买，持有5天，等权，5天往返0.30%。长窗-94.9%对沪深300的+30.4%，跑输约125.3个百分点，不扣费的毛收益约-43.4%也大亏。样本外+5.1%对+23.7%小赚仍跑输，训练期-3.0%对-1.0%，验证期-15.9%对+0.7%，留出期-4.0%对-3.3%，三窗全输。四个时代全输，滚动2017年转负后近年连续亏。例子用恒瑞医药这类量价齐升的公开名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
     },
     {
       "bili": null,

@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
   title: "老黄测指标",
-  description: "老黄测指标（国内版）：用 A 股历史数据回测散户常用指标，系列「什么指标不赚钱」46 集已测全表，B站视频+文章；栏目「有点苗头」即将上线。",
+  description: "老黄测指标（国内版）：用 A 股历史数据回测散户常用指标，系列「什么指标不赚钱」54 集已测全表，B站视频+文章；栏目「有点苗头」即将上线。",
   alternates: {
     canonical: `${SITE_URL}/`,
     languages: { "zh-CN": `${SITE_URL}/`, zh: `${SITE_URL}/global/`, "x-default": `${SITE_URL}/` },
@@ -60,8 +60,7 @@ export default function Home() {
           系列《什么指标不赚钱》把散户常用的技术指标，用 2010–2026 年 A
           股历史数据逐个回测：次日开盘买、拿 5 天后开盘卖，每笔扣往返 0.30%
           费用，并和同一天随机买入对照。目前已测 <b className="text-neutral-900 dark:text-white">{airedCount}</b> 个指标
-          （第 13 集因 4 个候选都不满足“明确不赚钱”而停更），
-          <b className="text-neutral-900 dark:text-white">全部不赚钱</b>。作者：躺平的老黄。
+          （第 13 集因 4 个候选都不满足“明确不赚钱”而停更）；多数判不赚钱，少数标「有苗头」见站内筛选。作者：躺平的老黄。
         </p>
         <p className="mt-2 max-w-2xl text-sm text-neutral-500">
           国内版视频来自 B站（{withBili} 集），无 B站视频的指标只显示文章版。每个指标页都有「视频 / 文章」两种版本。
@@ -91,7 +90,7 @@ export default function Home() {
             <h2 className="font-bold">什么指标不赚钱</h2>
           </div>
           <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
-            已测 {airedCount} 个指标，全部不赚钱。下表即本系列全集，点任一行看视频 + 文章 + 交互图表。
+            已测 {airedCount} 个指标；多数不赚钱，可用表格筛选「有苗头」。下表即本系列全集，点任一行看视频 + 文章 + 交互图表。
           </p>
           <a href="#indicators" className="mt-3 inline-block text-sm font-medium text-[#1E3A5F] hover:underline dark:text-blue-300">
             看全集 ↓
