@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13",
+  "generated": "2026-10-15",
   "method": "hold5为主口径（特别注明除外），次日开盘买、拿满5个交易日后开盘卖，往返扣费0.30%，与随机买入对照（事件层1000次/组合层200次）",
   "playlist": "https://www.youtube.com/playlist?list=PLJ8z9DDMq_Yg",
   "indicators": [
@@ -499,7 +499,7 @@
       "verdict": "不赚钱",
       "winRate": 41.05,
       "youtube": "x8QpHM-rxkU",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2093419654421165923"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1FtpE6jEvX",
@@ -521,7 +521,7 @@
       "verdict": "不赚钱",
       "winRate": 45.24,
       "youtube": "tqRJVKEws00",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2093452108150338317"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1Jmp76CEHZ",
@@ -543,7 +543,7 @@
       "verdict": "不赚钱",
       "winRate": 43.29,
       "youtube": "ifemn35BbvE",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2093780926471918025"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1sBpQ6mEXa",
@@ -565,7 +565,7 @@
       "verdict": "不赚钱",
       "winRate": 45.23,
       "youtube": "IuxsNsAMF0c",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2093818894783886067"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1CKp967EPx",
@@ -590,7 +590,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1wZpq6BE6d",
       "ep": 30,
       "eventPct": 0,
       "example": {
@@ -612,7 +612,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1wFpB6TETS",
       "ep": 31,
       "eventPct": 0,
       "example": {
@@ -634,7 +634,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1m6py6AEaM",
       "ep": 32,
       "eventPct": 0,
       "example": {
@@ -656,7 +656,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1tcp26BER6",
       "ep": 33,
       "eventPct": 0,
       "example": {
@@ -1076,7 +1076,7 @@
       "perTrade": null,
       "median": null,
       "winRate": null,
-      "portfolio": -100.0,
+      "portfolio": -100,
       "eventPct": null,
       "portfolioPct": null,
       "trades": null,
@@ -1120,7 +1120,7 @@
       "perTrade": null,
       "median": null,
       "winRate": null,
-      "portfolio": -100.0,
+      "portfolio": -100,
       "eventPct": null,
       "portfolioPct": null,
       "trades": null,
@@ -1156,23 +1156,92 @@
       "note": "长窗约 -95%。 收盘涨、而且量大于过去20天均量1.5倍，下个交易日买，持有5天，等权，5天往返0.30%。长窗-94.9%对沪深300的+30.4%，跑输约125.3个百分点，不扣费的毛收益约-43.4%也大亏。样本外+5.1%对+23.7%小赚仍跑输，训练期-3.0%对-1.0%，验证期-15.9%对+0.7%，留出期-4.0%对-3.3%，三窗全输。四个时代全输，滚动2017年转负后近年连续亏。例子用恒瑞医药这类量价齐升的公开名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
     },
     {
+      "id": "dmi_golden_cross",
+      "name": "DMI金叉",
+      "ep": 56,
+      "title": "DMI金叉出现就买，多头真的启动了吗？",
+      "verdict": "不赚钱",
+      "perTrade": -0.27,
+      "median": -0.62,
+      "winRate": 45.1,
+      "portfolio": -33.4,
+      "eventPct": 0.1,
+      "portfolioPct": 0,
+      "trades": 263489,
+      "example": {
+        "stock": "中国神华",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "r9LQX3KzkhE",
+      "zhihu": null,
       "bili": null,
-      "ep": null,
-      "eventPct": null,
-      "example": null,
-      "id": "bbi_bullish",
+      "note": "DMI(14)中往上穿的口径，收盘出信号、次日开盘买、持有5天，往返扣0.30%。全市场263489笔，胜率约45.1%，每笔平均净约-0.27%，中位数约-0.62%，组合年化约-33.4%，最大回撤约-99.9%，同期沪深300年化约+1.7%，大幅跑输。四个时代组合约-28.4%/-47.7%/-25.8%/-30.3%，全部跑输。和同一天随机买入对照，事件分位0.1%（随机平均约-0.24%）、组合分位0.0%（随机约-22.4%），还不如随机买。例子用中国神华这类公开名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
+    },
+    {
+      "id": "dma_golden_cross",
+      "name": "平行线差金叉",
+      "ep": 57,
+      "title": "平行线差金叉出现就买，中线买点真的到了吗？",
+      "verdict": "不赚钱",
+      "perTrade": -0.14,
+      "median": -0.65,
+      "winRate": 44.95,
+      "portfolio": -29.9,
+      "eventPct": 13.8,
+      "portfolioPct": 0.0,
+      "trades": 199970,
+      "example": {
+        "stock": "海天味业",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "Ccz3PVYpdxk",
+      "zhihu": null,
+      "bili": null,
+      "note": "平行线差（10天减50天再平均）往上穿的口径，收盘出信号、次日开盘买、持有5天，往返扣0.30%。全市场199970笔，胜率约45.0%，每笔平均净约-0.14%，中位数约-0.65%，组合年化约-29.9%，大幅跑输沪深300。四个时代组合约-31.3%/-38.1%/-21.8%/-28.7%，全部跑输，组合17年里每年都跑输沪深300。和同一天随机买入对照，事件分位13.8%（随机平均约-0.12%）、组合分位0.0%（随机约-21.3%），还不如随机买。拿久一点单笔曾转正，但组合仍大亏，只当弱线索，主结论仍不赚钱。例子用海天味业这类公开名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
+    },
+    {
+      "id": "alpha_lowvol",
+      "name": "低波动异象",
+      "ep": 58,
+      "title": "低波动异象在 A 股还成立吗？越稳越好买？",
+      "verdict": "有苗头",
+      "perTrade": null,
       "median": null,
-      "name": "BBI多空线",
-      "note": "ep24候选1 screened。hold5每笔-0.05%、组合-36.64%，信号47万笔太密未做视频。",
-      "perTrade": -0.05,
-      "portfolio": -36.64,
-      "portfolioPct": null,
-      "title": null,
-      "trades": 470000,
-      "verdict": "只研究",
       "winRate": null,
-      "youtube": null,
-      "zhihu": null
+      "portfolio": 571.3,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": null,
+      "example": {
+        "stock": "大秦铁路",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "Ar40jULYZPA",
+      "zhihu": null,
+      "bili": null,
+      "note": "过去60天波动最低的两成、每月底选一次、下个月持有、等权，每次换仓往返约0.30%，只用当月底能看到的数据，不是股票那种拿五天的测法。长窗低波净约+571.3%对沪深300约+30.8%（超额约+540.5个百分点），不扣费约+1118.2%，看起来比较赚。四个时代超额约+47.3/+171.6/+18.4/+26.6个百分点，四段全赢。但分段里样本外约+26.3%对+18.6%、训练期约+11.6%对+0.1%、验证期约-8.7%对-0.7%、留出期约-0.6%对-1.6%，验证期转负；近三年滚动超额2016年6月最高约+87.8%、2019年7月转负、近年约-0.9%；同口径波动最大的两成长窗仅约+113.9%。看起来比较赚但过不了我们自己的硬门槛，不能当稳跟仓秘籍，站内标「有苗头」供继续研究。例子用大秦铁路这类公开名，不编造具体交易数字，不构成投资建议。"
+    },
+    {
+      "id": "bbi_bullish",
+      "name": "BBI多空线",
+      "ep": 59,
+      "title": "BBI多空线翻红就买，真能分出多空吗？",
+      "verdict": "不赚钱",
+      "perTrade": -0.05,
+      "median": -0.5,
+      "winRate": 46.2,
+      "portfolio": -36.6,
+      "eventPct": 99.9,
+      "portfolioPct": 0.0,
+      "trades": 470169,
+      "example": {
+        "stock": "美的集团",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "sclXJlLrfRk",
+      "zhihu": null,
+      "bili": null,
+      "note": "BBI是3天、6天、12天、24天四根均线的平均，收盘从下往上穿过这根线算翻多，次日开盘买、持有5天，往返扣0.30%。全市场470169笔，胜率约46.2%，每笔平均净约-0.05%，净中位数约-0.50%，不扣费平均约+0.25%，组合年化约-36.6%，最大回撤约-99.9%。四个时代组合约-36.3%/-39.4%/-31.4%/-39.2%，对指数约-10.3%/+15.3%/+5.0%/-1.4%，四段全输，17年里每年都跑输沪深300。换股票也躲不掉，随机三组12只里跑赢的只有0/12、0/12、2/12；单笔和随机比排在99.9%略好，但组合只排在0.0%，远不如随机。费用降到0.15%组合仍大亏，拿久到20天单笔转正但组合仍亏，只当弱线索，主结论仍不赚钱。例子用美的集团这类公开名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
     },
     {
       "bili": null,
