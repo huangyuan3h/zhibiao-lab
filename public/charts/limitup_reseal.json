@@ -1,1 +1,17 @@
-{"id":"limitup_reseal","variant":null,"nodata":true,"updated":"2026-10-17"}
+{
+  "id": "limitup_reseal",
+  "variant": null,
+  "nodata": true,
+  "updated": "2026-10-17",
+  "example": {
+    "stock": "五粮液",
+    "code": "000858.SZ",
+    "date": "2024-09-30",
+    "detail": "样本内真实开板回封（2024-09-30），红框示意尾盘开板后回封；全市场结论看正文分窗数字，不编造该票收益。"
+  },
+  "youtube": "EvvSdTCzf3w",
+  "youtube_replaced": [
+    "jad9XtIBvYA",
+    "1s9yaEWrJlQ"
+  ]
+}
