@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19",
+  "generated": "2026-10-21",
   "method": "hold5为主口径（特别注明除外），次日开盘买、拿满5个交易日后开盘卖，往返扣费0.30%，与随机买入对照（事件层1000次/组合层200次）",
   "playlist": "https://www.youtube.com/playlist?list=PLJ8z9DDMq_Yg",
   "indicators": [
@@ -682,13 +682,13 @@
       "ep": 34,
       "eventPct": 0,
       "example": {
-        "stock": "福莱特 601865.SH",
-        "detail": "窗内2笔双亏：09-30信号→10-09开盘21.23买→10-16亏15.63% / 10-28信号→10-29开盘28.71买→11-05亏12.87%"
+        "stock": "中公教育 002607.SZ",
+        "detail": "窗内2笔双亏，不编造具体交易数字，全市场结论看正文分窗数字。"
       },
       "id": "limitup_highopen_chase",
       "median": -2.58,
       "name": "涨停高开追涨",
-      "note": "例子：福莱特 601865.SH（窗内2笔双亏）。",
+      "note": "例子：中公教育 002607.SZ（窗内2笔双亏）。",
       "perTrade": -1.44,
       "portfolio": -47.39,
       "portfolioPct": 0,
@@ -696,7 +696,7 @@
       "trades": 14909,
       "verdict": "不赚钱",
       "winRate": 40.6,
-      "youtube": "QrGZawEjkBI",
+      "youtube": "D6vxGinsrBs",
       "zhihu": "https://zhuanlan.zhihu.com/p/2094797383699785390"
     },
     {
@@ -785,7 +785,7 @@
       "verdict": "不赚钱",
       "winRate": 45.09,
       "youtube": "fZuDTT6wOQk",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2095418945834595365"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1mZJe6FEuY",
@@ -807,7 +807,7 @@
       "verdict": "不赚钱",
       "winRate": 45.59,
       "youtube": "4y9WX7CwV20",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2095778457506658102"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1SFn36eEAj",
@@ -829,7 +829,7 @@
       "verdict": "不赚钱",
       "winRate": 39.9,
       "youtube": "RTmbTKex65o",
-      "zhihu": null
+      "zhihu": "https://zhuanlan.zhihu.com/p/2095779496402096526"
     },
     {
       "bili": "https://www.bilibili.com/video/BV1jTnG6UEqe",
@@ -854,7 +854,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1FSnj6iEhL",
       "ep": 42,
       "eventPct": 0,
       "example": {
@@ -876,7 +876,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1FUnj6TEbJ",
       "ep": 43,
       "eventPct": 0,
       "example": {
@@ -898,7 +898,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV126JZ6fECZ",
       "ep": 44,
       "eventPct": 0,
       "example": {
@@ -920,7 +920,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1mzJZ68Emk",
       "ep": 45,
       "eventPct": 0,
       "example": {
@@ -942,7 +942,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1c4nK6rEHT",
       "ep": 46,
       "eventPct": 0,
       "example": {
@@ -964,7 +964,7 @@
       "zhihu": null
     },
     {
-      "bili": null,
+      "bili": "https://www.bilibili.com/video/BV1cxnK6GEyB",
       "ep": 47,
       "eventPct": 0,
       "example": {
@@ -1468,6 +1468,50 @@
       "zhihu": null,
       "bili": null,
       "note": "纳指用QQQ收盘代理、创业板指399006，各自相对20日均线择强或空仓、次日收盘调仓、单仓或空仓、换仓往返0.30%，只用收盘能看到的数据。对齐约3956天2010年7月1日到2026年10月16日，基准沪深300、纳指买持、创业板买持，公开零售口径，不绑私有组合。长窗策略净涨207%对沪深300涨65%，超额约142个点，长窗夏普约0.32，毛涨2118%到净207%，换仓658次一年约41次。但对纳指涨4718%大输约4511个点，纳指夏普约0.75，对创业板涨214%微输约7个点。四个时代2赢2输，样本外涨120.1%对跌7.8%赢、训练期涨36.1%对涨73%输、验证期跌1.2%对涨22.6%输、验证期夏普约0.07、留出期涨3.8%对跌15.6%赢，长赢但验证裂。滚动最高约170%在2014年2月、最低约负42%在2015年1月、近年约4.8%在2026年10月。成本0.15%到约涨726%仍赢，0.50%到约跌18%转负。规则写死了，进出写明白了，可过不了硬门槛，定调不那么赚钱。例子用纳指和创业板指宽基名，不编造具体交易数字。系列视频按严格线判不通过，不构成投资建议。"
+    },
+    {
+      "id": "h28_monday_gap",
+      "name": "周一低开反抽",
+      "ep": 71,
+      "title": "回测第一名「周一低开反抽」，为什么还是不能信？",
+      "verdict": "有苗头",
+      "perTrade": null,
+      "median": null,
+      "winRate": null,
+      "portfolio": null,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": null,
+      "example": {
+        "stock": "上海电影 601595.SH",
+        "detail": "公开例子，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "GGkN896SkTU",
+      "zhihu": null,
+      "bili": null,
+      "note": "只在周一、低开1%到10.5%、前日成交额高于当日中位、挑低开最深10只、当天09:35买收盘卖、每次按双边20基点扣成本，纸面当日进出算法。验证期2025年8月到2026年1月249笔25个周一，纸面验证笔均约+139基点、胜率约51%，袖子验证约40.21%、回撤约4.77%、夏普约3.86；留出期2026年2月到2026年4月99笔10个周一，纸面留出约+203基点、胜率约58%，袖子留出约21.95%、回撤约0.31%、夏普约5.38，先把好看的账本亮出来。三记裂缝：第一，当日进出在现货下不可执行，至少改成次日出才算边，纸面同日进出不等于实盘可做；第二，相对对照假设日超额约+25基点、t约0.80不显著，对照自身也有漂移，纸面好看可能蹭了漂移；第三，样本尖验证仅25个周一、留出仅10个周一，纸面卫星验证约14.1%叠进组合也站不住，当不了赚钱腿。有苗头不等于赚钱腿，不喊单，不改任何实盘。例子用上海电影这类篮子里的公开名，不编造具体交易数字。系列视频按严格线判有苗头供继续研究，不构成投资建议。"
+    },
+    {
+      "id": "index_hold_10y",
+      "name": "单纯持有指数",
+      "ep": 72,
+      "title": "过去十年只买指数，谁更赚钱？QQQ vs 沪深300",
+      "verdict": "只研究",
+      "perTrade": null,
+      "median": null,
+      "winRate": null,
+      "portfolio": 638.5,
+      "eventPct": null,
+      "portfolioPct": null,
+      "trades": null,
+      "example": {
+        "stock": "QQQ / 沪深300 / 创业板",
+        "detail": "宽基指数本身，不编造具体交易数字，全市场结论看正文分窗数字。"
+      },
+      "youtube": "WsFOzz5aGqI",
+      "zhihu": null,
+      "bili": null,
+      "note": "约10年窗2016年10月17日到2026年10月16日，美股4只宽基ETF用前复权收盘价、约含股息再投，A股5个宽基指数用价格指数、不含股息略低估，已点明，汇率十年几乎没动。折美元主表：QQQ约+638.5%、年化约22.1%、回撤约36.2%、夏普约0.96居首，标普约+400.6%，道指约+333.3%，罗素2000约+177.5%，创业板约+28.2%为A股最强，沪深300约+27.5%，上证约+22.5%，中证500约+5.9%，中证1000约亏24.2%。前半2016年10月到2021年10月QQQ仍第一，创业板约+58.2%、沪深300约+57.5%也有正收益；后半2021年10月到2026年10月QQQ仍第一约+97.4%，但A股内部第一换人，上证约亏0.4%相对抗跌，沪深300约亏18.2%、创业板约亏19.1%这段偏弱。本币补充：创业板约+27.9%、沪深300约+27.2%、上证约+22.2%、中证500约+5.6%、中证1000约亏24.3%，同序。读法：中国全市场不等于沪深300，口径与结构要分开看，过去十年这一窗的账不是未来保证。例子用QQQ、沪深300、创业板等宽基公开名，不编造具体交易数字。证据排序特辑，只研究供校准传闻，不喊单。历史回测不构成投资建议。"
     },
     {
       "bili": null,
