@@ -32,7 +32,7 @@ const REQUIRED = [
   "portfolio", "eventPct", "portfolioPct", "trades", "example",
   "youtube", "zhihu", "bili", "note",
 ];
-const VERDICTS = new Set(["不赚钱", "有苗头", "只研究"]);
+const VERDICTS = new Set(["不赚钱", "没那么赚", "有苗头", "只研究"]);
 
 function fail(msg) {
   console.error(`update-data: ${msg}`);

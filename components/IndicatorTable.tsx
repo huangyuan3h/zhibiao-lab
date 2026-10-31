@@ -26,7 +26,7 @@ function sortVal(i: Indicator, k: SortKey): number {
 
 export default function IndicatorTable({ items, edition }: { items: Indicator[]; edition: Edition }) {
   const [query, setQuery] = useState("");
-  const [verdict, setVerdict] = useState<"全部" | "不赚钱" | "有苗头" | "只研究">("全部");
+  const [verdict, setVerdict] = useState<"全部" | "不赚钱" | "没那么赚" | "有苗头" | "只研究">("全部");
   const [videoOnly, setVideoOnly] = useState(false);
   const [sortKey, setSortKey] = useState<SortKey>("ep");
   const [asc, setAsc] = useState(true);
@@ -70,7 +70,7 @@ export default function IndicatorTable({ items, edition }: { items: Indicator[];
           className="w-full rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm focus:border-neutral-500 focus:outline-none sm:max-w-xs dark:border-neutral-700 dark:bg-neutral-950"
         />
         <div className="flex flex-wrap gap-2 text-sm" role="group" aria-label="按结论筛选">
-          {(["全部", "不赚钱", "有苗头", "只研究"] as const).map((v) => (
+          {(["全部", "不赚钱", "没那么赚", "有苗头", "只研究"] as const).map((v) => (
             <button
               key={v}
               onClick={() => setVerdict(v)}

@@ -1,7 +1,7 @@
 import raw from "@/data/indicators.json";
 import articlesRaw from "@/data/articles.json";
 
-export type Verdict = "不赚钱" | "有苗头" | "只研究";
+export type Verdict = "不赚钱" | "没那么赚" | "有苗头" | "只研究";
 
 export interface Example {
   stock: string;
