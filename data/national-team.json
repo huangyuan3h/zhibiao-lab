@@ -1,0 +1,2558 @@
+{
+  "generated": "2026-11-01 07:49 Asia/Shanghai",
+  "asof": "2026-10-26",
+  "source": {
+    "builder": "karios-desktop data_sync_service.api.backtest_routes._load_flow_rows",
+    "tables": [
+      "cn_etf_share",
+      "cn_margin_total",
+      "cn_moneyflow_hsgt",
+      "index_daily",
+      "daily"
+    ],
+    "codes": [
+      "510300.SH",
+      "510500.SH",
+      "510510.SH",
+      "159915.SZ"
+    ],
+    "hsgtBreakDate": "2024-08-19",
+    "note": "与 Karios 桌面「资金流全景」同源：国家队=四码宽基 ETF 份额代理；两融=三所齐全日 rzye 合计；北向=north_money（2024-08-19 后为成交额口径，非净买）。非汇金/证金个股持仓名单；不做交易信号。"
+  },
+  "summary": {
+    "asof": "2026-10-26",
+    "etfShareYi": 772.0,
+    "etfShareD20Pct": 53.67,
+    "marginTrillion": 2.403,
+    "marginD20Pct": -7.94,
+    "northD20Yi": 506.5,
+    "northIsTurnover": true,
+    "n_days": 252,
+    "range": {
+      "from": "2025-10-14",
+      "to": "2026-10-26"
+    }
+  },
+  "series": [
+    {
+      "date": "2025-10-14",
+      "etfShareYi": 1438.3,
+      "etfShareD20Pct": -0.27,
+      "marginTrillion": 2.43,
+      "marginD20Pct": 5.78,
+      "northDailyYi": 34.8,
+      "northD20Yi": 613.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-15",
+      "etfShareYi": 1440.3,
+      "etfShareD20Pct": -0.23,
+      "marginTrillion": 2.433,
+      "marginD20Pct": 5.6,
+      "northDailyYi": 29.6,
+      "northD20Yi": 614.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-16",
+      "etfShareYi": 1432.9,
+      "etfShareD20Pct": -0.42,
+      "marginTrillion": 2.44,
+      "marginD20Pct": 5.67,
+      "northDailyYi": 26.1,
+      "northD20Yi": 614.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-17",
+      "etfShareYi": 1428.0,
+      "etfShareD20Pct": -1.01,
+      "marginTrillion": 2.413,
+      "marginD20Pct": 3.84,
+      "northDailyYi": 25.7,
+      "northD20Yi": 608.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-20",
+      "etfShareYi": 1432.4,
+      "etfShareD20Pct": -0.99,
+      "marginTrillion": 2.413,
+      "marginD20Pct": 3.35,
+      "northDailyYi": 23.5,
+      "northD20Yi": 600.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-21",
+      "etfShareYi": 1425.7,
+      "etfShareD20Pct": -1.29,
+      "marginTrillion": 2.427,
+      "marginD20Pct": 3.14,
+      "northDailyYi": 24.7,
+      "northD20Yi": 596.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-22",
+      "etfShareYi": 1419.2,
+      "etfShareD20Pct": -1.52,
+      "marginTrillion": 2.436,
+      "marginD20Pct": 2.51,
+      "northDailyYi": 21.4,
+      "northD20Yi": 589.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-23",
+      "etfShareYi": 1415.7,
+      "etfShareD20Pct": -1.7,
+      "marginTrillion": 2.434,
+      "marginD20Pct": 1.9,
+      "northDailyYi": 20.0,
+      "northD20Yi": 580.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-24",
+      "etfShareYi": 1413.8,
+      "etfShareD20Pct": -1.75,
+      "marginTrillion": 2.44,
+      "marginD20Pct": 2.27,
+      "northDailyYi": 22.2,
+      "northD20Yi": 565.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-27",
+      "etfShareYi": 1410.0,
+      "etfShareD20Pct": -2.19,
+      "marginTrillion": 2.464,
+      "marginD20Pct": 3.47,
+      "northDailyYi": 27.8,
+      "northD20Yi": 560.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-28",
+      "etfShareYi": 1413.0,
+      "etfShareD20Pct": -1.64,
+      "marginTrillion": 2.477,
+      "marginD20Pct": 3.17,
+      "northDailyYi": 23.7,
+      "northD20Yi": 557.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-29",
+      "etfShareYi": 1414.0,
+      "etfShareD20Pct": -1.2,
+      "marginTrillion": 2.489,
+      "marginD20Pct": 3.69,
+      "northDailyYi": null,
+      "northD20Yi": 557.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-30",
+      "etfShareYi": 1409.6,
+      "etfShareD20Pct": -1.37,
+      "marginTrillion": 2.481,
+      "marginD20Pct": 2.78,
+      "northDailyYi": 29.2,
+      "northD20Yi": 554.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-10-31",
+      "etfShareYi": 1422.5,
+      "etfShareD20Pct": -0.37,
+      "marginTrillion": 2.469,
+      "marginD20Pct": 1.71,
+      "northDailyYi": 28.4,
+      "northD20Yi": 553.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-03",
+      "etfShareYi": 1422.4,
+      "etfShareD20Pct": -0.56,
+      "marginTrillion": 2.477,
+      "marginD20Pct": 2.86,
+      "northDailyYi": 26.8,
+      "northD20Yi": 550.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-04",
+      "etfShareYi": 1414.3,
+      "etfShareD20Pct": -1.57,
+      "marginTrillion": 2.474,
+      "marginD20Pct": 2.54,
+      "northDailyYi": 24.1,
+      "northD20Yi": 547.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-05",
+      "etfShareYi": 1413.2,
+      "etfShareD20Pct": -1.43,
+      "marginTrillion": 2.474,
+      "marginD20Pct": 4.0,
+      "northDailyYi": 22.9,
+      "northD20Yi": 540.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-06",
+      "etfShareYi": 1411.3,
+      "etfShareD20Pct": -1.9,
+      "marginTrillion": 2.481,
+      "marginD20Pct": 2.11,
+      "northDailyYi": 24.4,
+      "northD20Yi": 537.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-07",
+      "etfShareYi": 1405.6,
+      "etfShareD20Pct": -2.71,
+      "marginTrillion": 2.476,
+      "marginD20Pct": 2.06,
+      "northDailyYi": 23.6,
+      "northD20Yi": 524.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-10",
+      "etfShareYi": 1404.6,
+      "etfShareD20Pct": -2.87,
+      "marginTrillion": 2.483,
+      "marginD20Pct": 2.28,
+      "northDailyYi": 24.4,
+      "northD20Yi": 515.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-11",
+      "etfShareYi": 1407.3,
+      "etfShareD20Pct": -2.15,
+      "marginTrillion": 2.487,
+      "marginD20Pct": 2.34,
+      "northDailyYi": 22.3,
+      "northD20Yi": 505.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-12",
+      "etfShareYi": 1407.7,
+      "etfShareD20Pct": -2.27,
+      "marginTrillion": 2.484,
+      "marginD20Pct": 2.12,
+      "northDailyYi": 22.6,
+      "northD20Yi": 493.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-13",
+      "etfShareYi": 1408.4,
+      "etfShareD20Pct": -1.71,
+      "marginTrillion": 2.488,
+      "marginD20Pct": 1.97,
+      "northDailyYi": 22.5,
+      "northD20Yi": 486.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-14",
+      "etfShareYi": 1405.5,
+      "etfShareD20Pct": -1.58,
+      "marginTrillion": 2.475,
+      "marginD20Pct": 2.56,
+      "northDailyYi": 21.0,
+      "northD20Yi": 481.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-17",
+      "etfShareYi": 1411.3,
+      "etfShareD20Pct": -1.47,
+      "marginTrillion": 2.482,
+      "marginD20Pct": 2.86,
+      "northDailyYi": 21.3,
+      "northD20Yi": 476.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-18",
+      "etfShareYi": 1414.2,
+      "etfShareD20Pct": -0.81,
+      "marginTrillion": 2.485,
+      "marginD20Pct": 2.37,
+      "northDailyYi": 21.8,
+      "northD20Yi": 475.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-19",
+      "etfShareYi": 1416.8,
+      "etfShareD20Pct": -0.17,
+      "marginTrillion": 2.48,
+      "marginD20Pct": 1.84,
+      "northDailyYi": 19.1,
+      "northD20Yi": 469.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-20",
+      "etfShareYi": 1417.1,
+      "etfShareD20Pct": 0.1,
+      "marginTrillion": 2.474,
+      "marginD20Pct": 1.66,
+      "northDailyYi": 19.2,
+      "northD20Yi": 467.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-21",
+      "etfShareYi": 1431.2,
+      "etfShareD20Pct": 1.23,
+      "marginTrillion": 2.445,
+      "marginD20Pct": 0.22,
+      "northDailyYi": 23.3,
+      "northD20Yi": 470.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-24",
+      "etfShareYi": 1450.0,
+      "etfShareD20Pct": 2.84,
+      "marginTrillion": 2.442,
+      "marginD20Pct": -0.89,
+      "northDailyYi": 23.6,
+      "northD20Yi": 472.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-25",
+      "etfShareYi": 1443.8,
+      "etfShareD20Pct": 2.18,
+      "marginTrillion": 2.446,
+      "marginD20Pct": -1.24,
+      "northDailyYi": 21.5,
+      "northD20Yi": 465.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-26",
+      "etfShareYi": 1427.6,
+      "etfShareD20Pct": 0.96,
+      "marginTrillion": 2.452,
+      "marginD20Pct": -1.46,
+      "northDailyYi": 20.1,
+      "northD20Yi": 462.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-27",
+      "etfShareYi": 1417.1,
+      "etfShareD20Pct": 0.53,
+      "marginTrillion": 2.455,
+      "marginD20Pct": -1.05,
+      "northDailyYi": 19.3,
+      "northD20Yi": 452.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-11-28",
+      "etfShareYi": 1414.6,
+      "etfShareD20Pct": -0.56,
+      "marginTrillion": 2.456,
+      "marginD20Pct": -0.5,
+      "northDailyYi": 18.6,
+      "northD20Yi": 442.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-01",
+      "etfShareYi": 1412.2,
+      "etfShareD20Pct": -0.72,
+      "marginTrillion": 2.467,
+      "marginD20Pct": -0.42,
+      "northDailyYi": 23.0,
+      "northD20Yi": 438.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-02",
+      "etfShareYi": 1408.4,
+      "etfShareD20Pct": -0.42,
+      "marginTrillion": 2.469,
+      "marginD20Pct": -0.19,
+      "northDailyYi": 18.0,
+      "northD20Yi": 432.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-03",
+      "etfShareYi": 1408.4,
+      "etfShareD20Pct": -0.34,
+      "marginTrillion": 2.465,
+      "marginD20Pct": -0.34,
+      "northDailyYi": 18.7,
+      "northD20Yi": 428.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-04",
+      "etfShareYi": 1409.5,
+      "etfShareD20Pct": -0.13,
+      "marginTrillion": 2.466,
+      "marginD20Pct": -0.57,
+      "northDailyYi": 17.4,
+      "northD20Yi": 421.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-05",
+      "etfShareYi": 1412.9,
+      "etfShareD20Pct": 0.52,
+      "marginTrillion": 2.464,
+      "marginD20Pct": -0.46,
+      "northDailyYi": 19.3,
+      "northD20Yi": 417.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-08",
+      "etfShareYi": 1415.2,
+      "etfShareD20Pct": 0.76,
+      "marginTrillion": 2.483,
+      "marginD20Pct": -0.02,
+      "northDailyYi": 22.3,
+      "northD20Yi": 415.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-09",
+      "etfShareYi": 1408.3,
+      "etfShareD20Pct": 0.07,
+      "marginTrillion": 2.493,
+      "marginD20Pct": 0.23,
+      "northDailyYi": 22.0,
+      "northD20Yi": 414.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-10",
+      "etfShareYi": 1401.2,
+      "etfShareD20Pct": -0.46,
+      "marginTrillion": 2.496,
+      "marginD20Pct": 0.5,
+      "northDailyYi": 20.4,
+      "northD20Yi": 412.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-11",
+      "etfShareYi": 1399.3,
+      "etfShareD20Pct": -0.65,
+      "marginTrillion": 2.49,
+      "marginD20Pct": 0.08,
+      "northDailyYi": 20.6,
+      "northD20Yi": 410.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-12",
+      "etfShareYi": 1405.8,
+      "etfShareD20Pct": 0.02,
+      "marginTrillion": 2.484,
+      "marginD20Pct": 0.36,
+      "northDailyYi": 31.0,
+      "northD20Yi": 420.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-15",
+      "etfShareYi": 1405.1,
+      "etfShareD20Pct": -0.44,
+      "marginTrillion": 2.489,
+      "marginD20Pct": 0.25,
+      "northDailyYi": 21.2,
+      "northD20Yi": 420.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-16",
+      "etfShareYi": 1405.8,
+      "etfShareD20Pct": -0.6,
+      "marginTrillion": 2.488,
+      "marginD20Pct": 0.13,
+      "northDailyYi": 20.8,
+      "northD20Yi": 419.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-17",
+      "etfShareYi": 1413.4,
+      "etfShareD20Pct": -0.24,
+      "marginTrillion": 2.486,
+      "marginD20Pct": 0.22,
+      "northDailyYi": 21.3,
+      "northD20Yi": 421.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-18",
+      "etfShareYi": 1412.8,
+      "etfShareD20Pct": -0.3,
+      "marginTrillion": 2.483,
+      "marginD20Pct": 0.33,
+      "northDailyYi": 18.3,
+      "northD20Yi": 420.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-19",
+      "etfShareYi": 1418.0,
+      "etfShareD20Pct": -0.92,
+      "marginTrillion": 2.487,
+      "marginD20Pct": 1.72,
+      "northDailyYi": 19.9,
+      "northD20Yi": 417.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-22",
+      "etfShareYi": 1413.9,
+      "etfShareD20Pct": -2.49,
+      "marginTrillion": 2.5,
+      "marginD20Pct": 2.35,
+      "northDailyYi": 18.2,
+      "northD20Yi": 411.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-23",
+      "etfShareYi": 1405.4,
+      "etfShareD20Pct": -2.66,
+      "marginTrillion": 2.515,
+      "marginD20Pct": 2.79,
+      "northDailyYi": 18.0,
+      "northD20Yi": 408.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-24",
+      "etfShareYi": 1405.3,
+      "etfShareD20Pct": -1.56,
+      "marginTrillion": 2.525,
+      "marginD20Pct": 2.95,
+      "northDailyYi": 16.7,
+      "northD20Yi": 405.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-25",
+      "etfShareYi": 1407.3,
+      "etfShareD20Pct": -0.69,
+      "marginTrillion": 2.528,
+      "marginD20Pct": 2.99,
+      "northDailyYi": null,
+      "northD20Yi": 405.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-26",
+      "etfShareYi": 1411.7,
+      "etfShareD20Pct": -0.2,
+      "marginTrillion": 2.526,
+      "marginD20Pct": 2.85,
+      "northDailyYi": null,
+      "northD20Yi": 405.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-29",
+      "etfShareYi": 1406.9,
+      "etfShareD20Pct": -0.38,
+      "marginTrillion": 2.535,
+      "marginD20Pct": 2.76,
+      "northDailyYi": 22.5,
+      "northD20Yi": 408.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-30",
+      "etfShareYi": 1404.8,
+      "etfShareD20Pct": -0.26,
+      "marginTrillion": 2.539,
+      "marginD20Pct": 2.82,
+      "northDailyYi": 23.8,
+      "northD20Yi": 413.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2025-12-31",
+      "etfShareYi": 1402.4,
+      "etfShareD20Pct": -0.43,
+      "marginTrillion": 2.524,
+      "marginD20Pct": 2.39,
+      "northDailyYi": 22.2,
+      "northD20Yi": 412.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-05",
+      "etfShareYi": 1408.7,
+      "etfShareD20Pct": -0.06,
+      "marginTrillion": 2.543,
+      "marginD20Pct": 3.12,
+      "northDailyYi": 29.6,
+      "northD20Yi": 424.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-06",
+      "etfShareYi": 1412.8,
+      "etfShareD20Pct": -0.0,
+      "marginTrillion": 2.562,
+      "marginD20Pct": 3.99,
+      "northDailyYi": 31.9,
+      "northD20Yi": 437.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-07",
+      "etfShareYi": 1410.2,
+      "etfShareD20Pct": -0.36,
+      "marginTrillion": 2.587,
+      "marginD20Pct": 4.21,
+      "northDailyYi": 32.7,
+      "northD20Yi": 452.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-08",
+      "etfShareYi": 1407.8,
+      "etfShareD20Pct": -0.03,
+      "marginTrillion": 2.603,
+      "marginD20Pct": 4.42,
+      "northDailyYi": 32.5,
+      "northD20Yi": 465.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-09",
+      "etfShareYi": 1416.1,
+      "etfShareD20Pct": 1.06,
+      "marginTrillion": 2.61,
+      "marginD20Pct": 4.55,
+      "northDailyYi": 37.0,
+      "northD20Yi": 480.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-12",
+      "etfShareYi": 1411.4,
+      "etfShareD20Pct": 0.87,
+      "marginTrillion": 2.656,
+      "marginD20Pct": 6.66,
+      "northDailyYi": 39.9,
+      "northD20Yi": 498.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-13",
+      "etfShareYi": 1403.6,
+      "etfShareD20Pct": -0.15,
+      "marginTrillion": 2.665,
+      "marginD20Pct": 7.31,
+      "northDailyYi": 42.1,
+      "northD20Yi": 520.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-14",
+      "etfShareYi": 1394.0,
+      "etfShareD20Pct": -0.78,
+      "marginTrillion": 2.681,
+      "marginD20Pct": 7.72,
+      "northDailyYi": 46.4,
+      "northD20Yi": 545.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-15",
+      "etfShareYi": 1333.8,
+      "etfShareD20Pct": -5.12,
+      "marginTrillion": 2.701,
+      "marginD20Pct": 8.57,
+      "northDailyYi": 35.5,
+      "northD20Yi": 550.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-16",
+      "etfShareYi": 1252.2,
+      "etfShareD20Pct": -11.4,
+      "marginTrillion": 2.714,
+      "marginD20Pct": 9.19,
+      "northDailyYi": 36.7,
+      "northD20Yi": 565.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-17",
+      "etfShareYi": 1226.9,
+      "etfShareD20Pct": -13.16,
+      "marginTrillion": 2.714,
+      "marginD20Pct": 9.19,
+      "northDailyYi": null,
+      "northD20Yi": 565.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-19",
+      "etfShareYi": 1204.2,
+      "etfShareD20Pct": -15.08,
+      "marginTrillion": 2.706,
+      "marginD20Pct": 9.0,
+      "northDailyYi": 32.4,
+      "northD20Yi": 577.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-20",
+      "etfShareYi": 1162.4,
+      "etfShareD20Pct": -17.79,
+      "marginTrillion": 2.692,
+      "marginD20Pct": 8.24,
+      "northDailyYi": 34.4,
+      "northD20Yi": 590.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-21",
+      "etfShareYi": 1118.2,
+      "etfShareD20Pct": -20.44,
+      "marginTrillion": 2.704,
+      "marginD20Pct": 8.15,
+      "northDailyYi": 32.1,
+      "northD20Yi": 604.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-22",
+      "etfShareYi": 1082.4,
+      "etfShareD20Pct": -22.98,
+      "marginTrillion": 2.708,
+      "marginD20Pct": 7.67,
+      "northDailyYi": 33.1,
+      "northD20Yi": 617.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-23",
+      "etfShareYi": 1034.8,
+      "etfShareD20Pct": -26.47,
+      "marginTrillion": 2.706,
+      "marginD20Pct": 7.19,
+      "northDailyYi": 37.2,
+      "northD20Yi": 636.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-26",
+      "etfShareYi": 984.4,
+      "etfShareD20Pct": -30.27,
+      "marginTrillion": 2.708,
+      "marginD20Pct": 7.1,
+      "northDailyYi": 40.4,
+      "northD20Yi": 659.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-27",
+      "etfShareYi": 948.0,
+      "etfShareD20Pct": -32.62,
+      "marginTrillion": 2.706,
+      "marginD20Pct": 7.1,
+      "northDailyYi": 37.8,
+      "northD20Yi": 680.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-28",
+      "etfShareYi": 871.9,
+      "etfShareD20Pct": -37.93,
+      "marginTrillion": 2.725,
+      "marginD20Pct": 7.51,
+      "northDailyYi": 37.6,
+      "northD20Yi": 695.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-29",
+      "etfShareYi": 835.2,
+      "etfShareD20Pct": -40.45,
+      "marginTrillion": 2.722,
+      "marginD20Pct": 7.24,
+      "northDailyYi": 39.7,
+      "northD20Yi": 711.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-01-30",
+      "etfShareYi": 816.9,
+      "etfShareD20Pct": -42.01,
+      "marginTrillion": 2.699,
+      "marginD20Pct": 6.91,
+      "northDailyYi": 39.1,
+      "northD20Yi": 727.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-02",
+      "etfShareYi": 785.6,
+      "etfShareD20Pct": -44.39,
+      "marginTrillion": 2.693,
+      "marginD20Pct": 5.87,
+      "northDailyYi": 35.8,
+      "northD20Yi": 734.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-03",
+      "etfShareYi": 792.0,
+      "etfShareD20Pct": -43.84,
+      "marginTrillion": 2.69,
+      "marginD20Pct": 4.98,
+      "northDailyYi": 34.2,
+      "northD20Yi": 736.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-04",
+      "etfShareYi": 785.7,
+      "etfShareD20Pct": -44.19,
+      "marginTrillion": 2.676,
+      "marginD20Pct": 3.43,
+      "northDailyYi": 32.3,
+      "northD20Yi": 736.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-05",
+      "etfShareYi": 786.1,
+      "etfShareD20Pct": -44.49,
+      "marginTrillion": 2.664,
+      "marginD20Pct": 2.34,
+      "northDailyYi": 28.9,
+      "northD20Yi": 732.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-06",
+      "etfShareYi": 791.6,
+      "etfShareD20Pct": -43.92,
+      "marginTrillion": 2.647,
+      "marginD20Pct": 1.42,
+      "northDailyYi": 28.8,
+      "northD20Yi": 724.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-09",
+      "etfShareYi": 794.8,
+      "etfShareD20Pct": -43.37,
+      "marginTrillion": 2.648,
+      "marginD20Pct": -0.32,
+      "northDailyYi": 27.3,
+      "northD20Yi": 711.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-10",
+      "etfShareYi": 786.3,
+      "etfShareD20Pct": -43.59,
+      "marginTrillion": 2.644,
+      "marginD20Pct": -0.81,
+      "northDailyYi": 25.9,
+      "northD20Yi": 695.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-11",
+      "etfShareYi": 786.1,
+      "etfShareD20Pct": -41.06,
+      "marginTrillion": 2.628,
+      "marginD20Pct": -1.97,
+      "northDailyYi": 25.3,
+      "northD20Yi": 674.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-12",
+      "etfShareYi": 789.9,
+      "etfShareD20Pct": -36.92,
+      "marginTrillion": 2.629,
+      "marginD20Pct": -2.66,
+      "northDailyYi": 29.0,
+      "northD20Yi": 667.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-13",
+      "etfShareYi": 771.8,
+      "etfShareD20Pct": -37.09,
+      "marginTrillion": 2.572,
+      "marginD20Pct": -5.23,
+      "northDailyYi": 27.0,
+      "northD20Yi": 658.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-24",
+      "etfShareYi": 769.9,
+      "etfShareD20Pct": -36.07,
+      "marginTrillion": 2.606,
+      "marginD20Pct": -3.68,
+      "northDailyYi": 31.7,
+      "northD20Yi": 657.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-25",
+      "etfShareYi": 770.1,
+      "etfShareD20Pct": -33.75,
+      "marginTrillion": 2.63,
+      "marginD20Pct": -2.31,
+      "northDailyYi": 32.0,
+      "northD20Yi": 655.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-26",
+      "etfShareYi": 754.6,
+      "etfShareD20Pct": -32.51,
+      "marginTrillion": 2.65,
+      "marginD20Pct": -1.98,
+      "northDailyYi": 31.7,
+      "northD20Yi": 654.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-02-27",
+      "etfShareYi": 754.2,
+      "etfShareD20Pct": -30.32,
+      "marginTrillion": 2.652,
+      "marginD20Pct": -2.06,
+      "northDailyYi": 34.2,
+      "northD20Yi": 655.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-02",
+      "etfShareYi": 739.7,
+      "etfShareD20Pct": -28.52,
+      "marginTrillion": 2.656,
+      "marginD20Pct": -1.84,
+      "northDailyYi": 37.9,
+      "northD20Yi": 656.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-03",
+      "etfShareYi": 729.3,
+      "etfShareD20Pct": -25.92,
+      "marginTrillion": 2.634,
+      "marginD20Pct": -2.74,
+      "northDailyYi": 41.4,
+      "northD20Yi": 657.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-04",
+      "etfShareYi": 735.0,
+      "etfShareD20Pct": -22.47,
+      "marginTrillion": 2.625,
+      "marginD20Pct": -2.97,
+      "northDailyYi": 33.0,
+      "northD20Yi": 652.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-05",
+      "etfShareYi": 729.8,
+      "etfShareD20Pct": -16.3,
+      "marginTrillion": 2.634,
+      "marginD20Pct": -3.35,
+      "northDailyYi": 31.6,
+      "northD20Yi": 646.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-06",
+      "etfShareYi": 722.7,
+      "etfShareD20Pct": -13.46,
+      "marginTrillion": 2.628,
+      "marginD20Pct": -3.47,
+      "northDailyYi": 28.3,
+      "northD20Yi": 635.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-09",
+      "etfShareYi": 723.3,
+      "etfShareD20Pct": -11.46,
+      "marginTrillion": 2.628,
+      "marginD20Pct": -2.64,
+      "northDailyYi": 36.1,
+      "northD20Yi": 632.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-10",
+      "etfShareYi": 723.1,
+      "etfShareD20Pct": -7.96,
+      "marginTrillion": 2.637,
+      "marginD20Pct": -2.06,
+      "northDailyYi": 29.6,
+      "northD20Yi": 625.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-11",
+      "etfShareYi": 709.2,
+      "etfShareD20Pct": -10.45,
+      "marginTrillion": 2.643,
+      "marginD20Pct": -1.75,
+      "northDailyYi": 30.4,
+      "northD20Yi": 622.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-12",
+      "etfShareYi": 702.5,
+      "etfShareD20Pct": -10.59,
+      "marginTrillion": 2.646,
+      "marginD20Pct": -1.12,
+      "northDailyYi": 29.6,
+      "northD20Yi": 619.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-13",
+      "etfShareYi": 703.9,
+      "etfShareD20Pct": -10.46,
+      "marginTrillion": 2.633,
+      "marginD20Pct": -1.16,
+      "northDailyYi": 29.5,
+      "northD20Yi": 620.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-16",
+      "etfShareYi": 705.6,
+      "etfShareD20Pct": -10.86,
+      "marginTrillion": 2.643,
+      "marginD20Pct": -0.15,
+      "northDailyYi": 30.3,
+      "northD20Yi": 621.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-17",
+      "etfShareYi": 708.0,
+      "etfShareD20Pct": -10.92,
+      "marginTrillion": 2.634,
+      "marginD20Pct": -0.51,
+      "northDailyYi": 28.5,
+      "northD20Yi": 622.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-18",
+      "etfShareYi": 713.5,
+      "etfShareD20Pct": -9.27,
+      "marginTrillion": 2.637,
+      "marginD20Pct": -0.27,
+      "northDailyYi": 26.4,
+      "northD20Yi": 623.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-19",
+      "etfShareYi": 712.2,
+      "etfShareD20Pct": -9.39,
+      "marginTrillion": 2.632,
+      "marginD20Pct": 0.17,
+      "northDailyYi": 27.5,
+      "northD20Yi": 625.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-20",
+      "etfShareYi": 718.9,
+      "etfShareD20Pct": -8.99,
+      "marginTrillion": 2.615,
+      "marginD20Pct": -0.55,
+      "northDailyYi": 33.9,
+      "northD20Yi": 630.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-23",
+      "etfShareYi": 719.3,
+      "etfShareD20Pct": -6.81,
+      "marginTrillion": 2.603,
+      "marginD20Pct": 1.2,
+      "northDailyYi": 35.2,
+      "northD20Yi": 638.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-24",
+      "etfShareYi": 722.6,
+      "etfShareD20Pct": -6.14,
+      "marginTrillion": 2.596,
+      "marginD20Pct": -0.38,
+      "northDailyYi": 28.9,
+      "northD20Yi": 635.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-25",
+      "etfShareYi": 717.9,
+      "etfShareD20Pct": -6.78,
+      "marginTrillion": 2.6,
+      "marginD20Pct": -1.15,
+      "northDailyYi": 27.3,
+      "northD20Yi": 631.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-26",
+      "etfShareYi": 710.9,
+      "etfShareD20Pct": -5.79,
+      "marginTrillion": 2.599,
+      "marginD20Pct": -1.93,
+      "northDailyYi": 25.0,
+      "northD20Yi": 624.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-27",
+      "etfShareYi": 713.9,
+      "etfShareD20Pct": -5.35,
+      "marginTrillion": 2.591,
+      "marginD20Pct": -2.3,
+      "northDailyYi": 24.5,
+      "northD20Yi": 614.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-30",
+      "etfShareYi": 708.2,
+      "etfShareD20Pct": -4.26,
+      "marginTrillion": 2.599,
+      "marginD20Pct": -2.17,
+      "northDailyYi": 24.6,
+      "northD20Yi": 601.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-03-31",
+      "etfShareYi": 709.7,
+      "etfShareD20Pct": -2.68,
+      "marginTrillion": 2.59,
+      "marginD20Pct": -1.64,
+      "northDailyYi": 24.0,
+      "northD20Yi": 584.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-01",
+      "etfShareYi": 713.8,
+      "etfShareD20Pct": -2.87,
+      "marginTrillion": 2.591,
+      "marginD20Pct": -1.31,
+      "northDailyYi": 22.9,
+      "northD20Yi": 574.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-02",
+      "etfShareYi": 707.0,
+      "etfShareD20Pct": -3.13,
+      "marginTrillion": 2.58,
+      "marginD20Pct": -2.04,
+      "northDailyYi": 20.4,
+      "northD20Yi": 562.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-03",
+      "etfShareYi": 711.5,
+      "etfShareD20Pct": -1.56,
+      "marginTrillion": 2.563,
+      "marginD20Pct": -2.47,
+      "northDailyYi": null,
+      "northD20Yi": 562.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-07",
+      "etfShareYi": 714.6,
+      "etfShareD20Pct": -1.2,
+      "marginTrillion": 2.567,
+      "marginD20Pct": -2.32,
+      "northDailyYi": null,
+      "northD20Yi": 562.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-08",
+      "etfShareYi": 723.3,
+      "etfShareD20Pct": 0.03,
+      "marginTrillion": 2.583,
+      "marginD20Pct": -2.06,
+      "northDailyYi": 29.3,
+      "northD20Yi": 564.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-09",
+      "etfShareYi": 711.0,
+      "etfShareD20Pct": 0.26,
+      "marginTrillion": 2.59,
+      "marginD20Pct": -1.99,
+      "northDailyYi": 25.9,
+      "northD20Yi": 553.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-10",
+      "etfShareYi": 705.2,
+      "etfShareD20Pct": 0.38,
+      "marginTrillion": 2.596,
+      "marginD20Pct": -1.91,
+      "northDailyYi": 28.1,
+      "northD20Yi": 552.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-13",
+      "etfShareYi": 697.4,
+      "etfShareD20Pct": -0.92,
+      "marginTrillion": 2.612,
+      "marginD20Pct": -0.82,
+      "northDailyYi": 27.3,
+      "northD20Yi": 549.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-14",
+      "etfShareYi": 694.7,
+      "etfShareD20Pct": -1.55,
+      "marginTrillion": 2.628,
+      "marginD20Pct": -0.57,
+      "northDailyYi": 29.5,
+      "northD20Yi": 549.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-15",
+      "etfShareYi": 698.5,
+      "etfShareD20Pct": -1.34,
+      "marginTrillion": 2.638,
+      "marginD20Pct": 0.16,
+      "northDailyYi": 29.8,
+      "northD20Yi": 549.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-16",
+      "etfShareYi": 694.6,
+      "etfShareD20Pct": -2.65,
+      "marginTrillion": 2.649,
+      "marginD20Pct": 0.47,
+      "northDailyYi": 29.3,
+      "northD20Yi": 548.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-17",
+      "etfShareYi": 686.6,
+      "etfShareD20Pct": -3.6,
+      "marginTrillion": 2.651,
+      "marginD20Pct": 0.72,
+      "northDailyYi": 29.8,
+      "northD20Yi": 549.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-20",
+      "etfShareYi": 672.6,
+      "etfShareD20Pct": -6.43,
+      "marginTrillion": 2.68,
+      "marginD20Pct": 2.51,
+      "northDailyYi": 31.1,
+      "northD20Yi": 554.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-21",
+      "etfShareYi": 662.1,
+      "etfShareD20Pct": -7.94,
+      "marginTrillion": 2.687,
+      "marginD20Pct": 3.21,
+      "northDailyYi": 30.1,
+      "northD20Yi": 556.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-22",
+      "etfShareYi": 648.8,
+      "etfShareD20Pct": -10.21,
+      "marginTrillion": 2.7,
+      "marginD20Pct": 4.01,
+      "northDailyYi": 30.6,
+      "northD20Yi": 553.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-23",
+      "etfShareYi": 630.9,
+      "etfShareD20Pct": -12.11,
+      "marginTrillion": 2.704,
+      "marginD20Pct": 4.02,
+      "northDailyYi": 35.3,
+      "northD20Yi": 553.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-24",
+      "etfShareYi": 625.1,
+      "etfShareD20Pct": -12.06,
+      "marginTrillion": 2.693,
+      "marginD20Pct": 3.63,
+      "northDailyYi": 34.3,
+      "northD20Yi": 559.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-27",
+      "etfShareYi": 618.8,
+      "etfShareD20Pct": -13.32,
+      "marginTrillion": 2.709,
+      "marginD20Pct": 4.55,
+      "northDailyYi": 32.2,
+      "northD20Yi": 564.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-28",
+      "etfShareYi": 611.7,
+      "etfShareD20Pct": -13.62,
+      "marginTrillion": 2.709,
+      "marginD20Pct": 4.24,
+      "northDailyYi": 33.3,
+      "northD20Yi": 572.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-29",
+      "etfShareYi": 608.1,
+      "etfShareD20Pct": -14.32,
+      "marginTrillion": 2.712,
+      "marginD20Pct": 4.71,
+      "northDailyYi": 34.1,
+      "northD20Yi": 582.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-04-30",
+      "etfShareYi": 589.6,
+      "etfShareD20Pct": -17.41,
+      "marginTrillion": 2.696,
+      "marginD20Pct": 4.03,
+      "northDailyYi": 35.1,
+      "northD20Yi": 592.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-06",
+      "etfShareYi": 588.1,
+      "etfShareD20Pct": -16.81,
+      "marginTrillion": 2.737,
+      "marginD20Pct": 6.07,
+      "northDailyYi": 41.4,
+      "northD20Yi": 609.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-07",
+      "etfShareYi": 560.2,
+      "etfShareD20Pct": -21.26,
+      "marginTrillion": 2.766,
+      "marginD20Pct": 7.95,
+      "northDailyYi": 39.2,
+      "northD20Yi": 626.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-08",
+      "etfShareYi": 542.5,
+      "etfShareD20Pct": -24.09,
+      "marginTrillion": 2.782,
+      "marginD20Pct": 8.41,
+      "northDailyYi": 35.7,
+      "northD20Yi": 641.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-11",
+      "etfShareYi": 525.6,
+      "etfShareD20Pct": -27.32,
+      "marginTrillion": 2.813,
+      "marginD20Pct": 8.91,
+      "northDailyYi": 42.4,
+      "northD20Yi": 654.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-12",
+      "etfShareYi": 516.8,
+      "etfShareD20Pct": -27.32,
+      "marginTrillion": 2.83,
+      "marginD20Pct": 9.25,
+      "northDailyYi": 40.6,
+      "northD20Yi": 669.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-13",
+      "etfShareYi": 508.7,
+      "etfShareD20Pct": -27.87,
+      "marginTrillion": 2.853,
+      "marginD20Pct": 9.92,
+      "northDailyYi": 39.3,
+      "northD20Yi": 680.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-14",
+      "etfShareYi": 500.5,
+      "etfShareD20Pct": -28.24,
+      "marginTrillion": 2.862,
+      "marginD20Pct": 9.59,
+      "northDailyYi": 41.3,
+      "northD20Yi": 694.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-15",
+      "etfShareYi": 504.0,
+      "etfShareD20Pct": -27.45,
+      "marginTrillion": 2.856,
+      "marginD20Pct": 8.69,
+      "northDailyYi": 43.5,
+      "northD20Yi": 708.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-18",
+      "etfShareYi": 501.4,
+      "etfShareD20Pct": -28.22,
+      "marginTrillion": 2.872,
+      "marginD20Pct": 8.86,
+      "northDailyYi": 38.0,
+      "northD20Yi": 716.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-19",
+      "etfShareYi": 490.2,
+      "etfShareD20Pct": -29.42,
+      "marginTrillion": 2.877,
+      "marginD20Pct": 8.61,
+      "northDailyYi": 35.9,
+      "northD20Yi": 723.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-20",
+      "etfShareYi": 482.6,
+      "etfShareD20Pct": -29.71,
+      "marginTrillion": 2.884,
+      "marginD20Pct": 8.77,
+      "northDailyYi": 35.3,
+      "northD20Yi": 728.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-21",
+      "etfShareYi": 477.9,
+      "etfShareD20Pct": -28.95,
+      "marginTrillion": 2.875,
+      "marginD20Pct": 7.27,
+      "northDailyYi": 40.0,
+      "northD20Yi": 737.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-22",
+      "etfShareYi": 471.7,
+      "etfShareD20Pct": -28.76,
+      "marginTrillion": 2.878,
+      "marginD20Pct": 7.12,
+      "northDailyYi": 33.3,
+      "northD20Yi": 741.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-25",
+      "etfShareYi": 450.6,
+      "etfShareD20Pct": -30.56,
+      "marginTrillion": 2.904,
+      "marginD20Pct": 7.52,
+      "northDailyYi": null,
+      "northD20Yi": 741.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-26",
+      "etfShareYi": 443.3,
+      "etfShareD20Pct": -29.74,
+      "marginTrillion": 2.911,
+      "marginD20Pct": 7.64,
+      "northDailyYi": 39.5,
+      "northD20Yi": 749.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-27",
+      "etfShareYi": 440.3,
+      "etfShareD20Pct": -29.57,
+      "marginTrillion": 2.915,
+      "marginD20Pct": 8.24,
+      "northDailyYi": 40.7,
+      "northD20Yi": 755.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-28",
+      "etfShareYi": 437.1,
+      "etfShareD20Pct": -29.37,
+      "marginTrillion": 2.921,
+      "marginD20Pct": 7.83,
+      "northDailyYi": 38.4,
+      "northD20Yi": 759.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-05-29",
+      "etfShareYi": 436.4,
+      "etfShareD20Pct": -28.66,
+      "marginTrillion": 2.891,
+      "marginD20Pct": 6.73,
+      "northDailyYi": 47.3,
+      "northD20Yi": 774.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-01",
+      "etfShareYi": 441.9,
+      "etfShareD20Pct": -27.34,
+      "marginTrillion": 2.883,
+      "marginD20Pct": 6.3,
+      "northDailyYi": 40.7,
+      "northD20Yi": 781.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-02",
+      "etfShareYi": 444.3,
+      "etfShareD20Pct": -24.64,
+      "marginTrillion": 2.885,
+      "marginD20Pct": 7.02,
+      "northDailyYi": 37.6,
+      "northD20Yi": 785.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-03",
+      "etfShareYi": 438.1,
+      "etfShareD20Pct": -25.51,
+      "marginTrillion": 2.893,
+      "marginD20Pct": 5.72,
+      "northDailyYi": 41.5,
+      "northD20Yi": 791.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-04",
+      "etfShareYi": 434.2,
+      "etfShareD20Pct": -22.48,
+      "marginTrillion": 2.9,
+      "marginD20Pct": 4.82,
+      "northDailyYi": 36.5,
+      "northD20Yi": 786.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-05",
+      "etfShareYi": 435.4,
+      "etfShareD20Pct": -19.74,
+      "marginTrillion": 2.886,
+      "marginD20Pct": 3.72,
+      "northDailyYi": 40.5,
+      "northD20Yi": 788.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-08",
+      "etfShareYi": 445.6,
+      "etfShareD20Pct": -15.23,
+      "marginTrillion": 2.862,
+      "marginD20Pct": 1.76,
+      "northDailyYi": 37.0,
+      "northD20Yi": 789.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-09",
+      "etfShareYi": 443.5,
+      "etfShareD20Pct": -14.19,
+      "marginTrillion": 2.866,
+      "marginD20Pct": 1.28,
+      "northDailyYi": 36.1,
+      "northD20Yi": 783.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-10",
+      "etfShareYi": 440.6,
+      "etfShareD20Pct": -13.38,
+      "marginTrillion": 2.858,
+      "marginD20Pct": 0.18,
+      "northDailyYi": 35.0,
+      "northD20Yi": 777.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-11",
+      "etfShareYi": 444.7,
+      "etfShareD20Pct": -11.13,
+      "marginTrillion": 2.853,
+      "marginD20Pct": -0.32,
+      "northDailyYi": 33.9,
+      "northD20Yi": 772.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-12",
+      "etfShareYi": 445.7,
+      "etfShareD20Pct": -11.56,
+      "marginTrillion": 2.852,
+      "marginD20Pct": -0.13,
+      "northDailyYi": 49.1,
+      "northD20Yi": 779.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-15",
+      "etfShareYi": 445.1,
+      "etfShareD20Pct": -11.22,
+      "marginTrillion": 2.876,
+      "marginD20Pct": 0.16,
+      "northDailyYi": 41.0,
+      "northD20Yi": 777.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-16",
+      "etfShareYi": 438.6,
+      "etfShareD20Pct": -10.54,
+      "marginTrillion": 2.903,
+      "marginD20Pct": 0.9,
+      "northDailyYi": 38.3,
+      "northD20Yi": 777.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-17",
+      "etfShareYi": 428.6,
+      "etfShareD20Pct": -11.2,
+      "marginTrillion": 2.931,
+      "marginD20Pct": 1.64,
+      "northDailyYi": 38.5,
+      "northD20Yi": 780.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-18",
+      "etfShareYi": 424.4,
+      "etfShareD20Pct": -11.2,
+      "marginTrillion": 2.944,
+      "marginD20Pct": 2.38,
+      "northDailyYi": 42.9,
+      "northD20Yi": 787.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-22",
+      "etfShareYi": 421.7,
+      "etfShareD20Pct": -10.59,
+      "marginTrillion": 2.973,
+      "marginD20Pct": 3.29,
+      "northDailyYi": 48.2,
+      "northD20Yi": 796.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-23",
+      "etfShareYi": 406.3,
+      "etfShareD20Pct": -9.83,
+      "marginTrillion": 2.979,
+      "marginD20Pct": 2.6,
+      "northDailyYi": 44.4,
+      "northD20Yi": 807.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-24",
+      "etfShareYi": 393.7,
+      "etfShareD20Pct": -11.18,
+      "marginTrillion": 2.993,
+      "marginD20Pct": 2.81,
+      "northDailyYi": 42.4,
+      "northD20Yi": 810.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-25",
+      "etfShareYi": 369.5,
+      "etfShareD20Pct": -16.08,
+      "marginTrillion": 3.01,
+      "marginD20Pct": 3.27,
+      "northDailyYi": 42.4,
+      "northD20Yi": 811.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-26",
+      "etfShareYi": 367.6,
+      "etfShareD20Pct": -15.89,
+      "marginTrillion": 2.99,
+      "marginD20Pct": 2.36,
+      "northDailyYi": 41.3,
+      "northD20Yi": 814.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-29",
+      "etfShareYi": 358.9,
+      "etfShareD20Pct": -17.75,
+      "marginTrillion": 2.981,
+      "marginD20Pct": 3.11,
+      "northDailyYi": 42.7,
+      "northD20Yi": 810.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-06-30",
+      "etfShareYi": 346.0,
+      "etfShareD20Pct": -21.69,
+      "marginTrillion": 2.997,
+      "marginD20Pct": 3.94,
+      "northDailyYi": 36.4,
+      "northD20Yi": 805.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-01",
+      "etfShareYi": 340.2,
+      "etfShareD20Pct": -23.43,
+      "marginTrillion": 3.007,
+      "marginD20Pct": 4.24,
+      "northDailyYi": null,
+      "northD20Yi": 805.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-02",
+      "etfShareYi": 343.5,
+      "etfShareD20Pct": -21.61,
+      "marginTrillion": 3.0,
+      "marginD20Pct": 3.71,
+      "northDailyYi": 42.4,
+      "northD20Yi": 810.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-03",
+      "etfShareYi": 333.2,
+      "etfShareD20Pct": -23.26,
+      "marginTrillion": 2.981,
+      "marginD20Pct": 2.79,
+      "northDailyYi": 39.2,
+      "northD20Yi": 808.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-06",
+      "etfShareYi": 330.1,
+      "etfShareD20Pct": -24.18,
+      "marginTrillion": 2.97,
+      "marginD20Pct": 2.93,
+      "northDailyYi": 39.6,
+      "northD20Yi": 811.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-07",
+      "etfShareYi": 334.8,
+      "etfShareD20Pct": -24.87,
+      "marginTrillion": 2.957,
+      "marginD20Pct": 3.3,
+      "northDailyYi": 33.7,
+      "northD20Yi": 804.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-08",
+      "etfShareYi": 341.4,
+      "etfShareD20Pct": -23.01,
+      "marginTrillion": 2.938,
+      "marginD20Pct": 2.51,
+      "northDailyYi": 33.8,
+      "northD20Yi": 801.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-09",
+      "etfShareYi": 344.4,
+      "etfShareD20Pct": -21.83,
+      "marginTrillion": 2.934,
+      "marginD20Pct": 2.67,
+      "northDailyYi": 40.1,
+      "northD20Yi": 805.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-10",
+      "etfShareYi": 343.0,
+      "etfShareD20Pct": -22.88,
+      "marginTrillion": 2.923,
+      "marginD20Pct": 2.46,
+      "northDailyYi": 44.9,
+      "northD20Yi": 815.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-13",
+      "etfShareYi": 362.1,
+      "etfShareD20Pct": -18.77,
+      "marginTrillion": 2.889,
+      "marginD20Pct": 1.29,
+      "northDailyYi": 41.8,
+      "northD20Yi": 823.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-14",
+      "etfShareYi": 371.5,
+      "etfShareD20Pct": -16.54,
+      "marginTrillion": 2.878,
+      "marginD20Pct": 0.06,
+      "northDailyYi": 41.6,
+      "northD20Yi": 815.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-15",
+      "etfShareYi": 371.6,
+      "etfShareD20Pct": -15.26,
+      "marginTrillion": 2.866,
+      "marginD20Pct": -1.26,
+      "northDailyYi": 36.2,
+      "northD20Yi": 810.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-16",
+      "etfShareYi": 388.0,
+      "etfShareD20Pct": -9.46,
+      "marginTrillion": 2.838,
+      "marginD20Pct": -3.18,
+      "northDailyYi": 35.6,
+      "northD20Yi": 808.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-17",
+      "etfShareYi": 416.0,
+      "etfShareD20Pct": -1.97,
+      "marginTrillion": 2.758,
+      "marginD20Pct": -6.33,
+      "northDailyYi": 39.4,
+      "northD20Yi": 809.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-20",
+      "etfShareYi": 465.0,
+      "etfShareD20Pct": 10.25,
+      "marginTrillion": 2.698,
+      "marginD20Pct": -9.25,
+      "northDailyYi": 43.0,
+      "northD20Yi": 809.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-21",
+      "etfShareYi": 491.2,
+      "etfShareD20Pct": 20.91,
+      "marginTrillion": 2.698,
+      "marginD20Pct": -9.44,
+      "northDailyYi": 43.9,
+      "northD20Yi": 804.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-22",
+      "etfShareYi": 477.9,
+      "etfShareD20Pct": 21.39,
+      "marginTrillion": 2.699,
+      "marginD20Pct": -9.83,
+      "northDailyYi": 37.5,
+      "northD20Yi": 797.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-23",
+      "etfShareYi": 473.6,
+      "etfShareD20Pct": 28.16,
+      "marginTrillion": 2.689,
+      "marginD20Pct": -10.67,
+      "northDailyYi": 30.8,
+      "northD20Yi": 786.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-24",
+      "etfShareYi": 477.4,
+      "etfShareD20Pct": 29.86,
+      "marginTrillion": 2.667,
+      "marginD20Pct": -10.8,
+      "northDailyYi": 28.4,
+      "northD20Yi": 772.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-27",
+      "etfShareYi": 484.3,
+      "etfShareD20Pct": 34.94,
+      "marginTrillion": 2.677,
+      "marginD20Pct": -10.21,
+      "northDailyYi": 27.7,
+      "northD20Yi": 758.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-28",
+      "etfShareYi": 489.1,
+      "etfShareD20Pct": 41.35,
+      "marginTrillion": 2.647,
+      "marginD20Pct": -11.68,
+      "northDailyYi": 28.1,
+      "northD20Yi": 744.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-29",
+      "etfShareYi": 521.5,
+      "etfShareD20Pct": 53.3,
+      "marginTrillion": 2.621,
+      "marginD20Pct": -12.83,
+      "northDailyYi": 34.1,
+      "northD20Yi": 741.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-30",
+      "etfShareYi": 535.1,
+      "etfShareD20Pct": 55.8,
+      "marginTrillion": 2.585,
+      "marginD20Pct": -13.86,
+      "northDailyYi": 36.3,
+      "northD20Yi": 735.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-07-31",
+      "etfShareYi": 556.1,
+      "etfShareD20Pct": 66.89,
+      "marginTrillion": 2.589,
+      "marginD20Pct": -13.14,
+      "northDailyYi": 35.4,
+      "northD20Yi": 731.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-03",
+      "etfShareYi": 547.4,
+      "etfShareD20Pct": 65.83,
+      "marginTrillion": 2.58,
+      "marginD20Pct": -13.12,
+      "northDailyYi": 29.8,
+      "northD20Yi": 722.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-04",
+      "etfShareYi": 541.2,
+      "etfShareD20Pct": 61.65,
+      "marginTrillion": 2.592,
+      "marginD20Pct": -12.33,
+      "northDailyYi": 29.6,
+      "northD20Yi": 718.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-05",
+      "etfShareYi": 524.1,
+      "etfShareD20Pct": 53.51,
+      "marginTrillion": 2.605,
+      "marginD20Pct": -11.35,
+      "northDailyYi": 35.2,
+      "northD20Yi": 719.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-06",
+      "etfShareYi": 513.3,
+      "etfShareD20Pct": 49.04,
+      "marginTrillion": 2.616,
+      "marginD20Pct": -10.86,
+      "northDailyYi": 32.6,
+      "northD20Yi": 711.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-07",
+      "etfShareYi": 503.5,
+      "etfShareD20Pct": 46.81,
+      "marginTrillion": 2.623,
+      "marginD20Pct": -10.27,
+      "northDailyYi": 34.5,
+      "northD20Yi": 701.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-10",
+      "etfShareYi": 494.4,
+      "etfShareD20Pct": 36.53,
+      "marginTrillion": 2.637,
+      "marginD20Pct": -8.74,
+      "northDailyYi": 32.2,
+      "northD20Yi": 691.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-11",
+      "etfShareYi": 495.8,
+      "etfShareD20Pct": 33.45,
+      "marginTrillion": 2.638,
+      "marginD20Pct": -8.35,
+      "northDailyYi": 29.7,
+      "northD20Yi": 680.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-12",
+      "etfShareYi": 484.7,
+      "etfShareD20Pct": 30.42,
+      "marginTrillion": 2.647,
+      "marginD20Pct": -7.64,
+      "northDailyYi": 28.2,
+      "northD20Yi": 672.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-13",
+      "etfShareYi": 476.6,
+      "etfShareD20Pct": 22.84,
+      "marginTrillion": 2.65,
+      "marginD20Pct": -6.62,
+      "northDailyYi": 31.5,
+      "northD20Yi": 667.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-14",
+      "etfShareYi": 470.9,
+      "etfShareD20Pct": 13.19,
+      "marginTrillion": 2.648,
+      "marginD20Pct": -3.98,
+      "northDailyYi": 27.4,
+      "northD20Yi": 656.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-17",
+      "etfShareYi": 464.8,
+      "etfShareD20Pct": -0.03,
+      "marginTrillion": 2.666,
+      "marginD20Pct": -1.19,
+      "northDailyYi": 30.0,
+      "northD20Yi": 643.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-18",
+      "etfShareYi": 455.9,
+      "etfShareD20Pct": -7.18,
+      "marginTrillion": 2.671,
+      "marginD20Pct": -1.0,
+      "northDailyYi": 30.8,
+      "northD20Yi": 629.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-19",
+      "etfShareYi": 470.5,
+      "etfShareD20Pct": -1.55,
+      "marginTrillion": 2.641,
+      "marginD20Pct": -2.13,
+      "northDailyYi": 32.8,
+      "northD20Yi": 625.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-20",
+      "etfShareYi": 480.5,
+      "etfShareD20Pct": 1.47,
+      "marginTrillion": 2.64,
+      "marginD20Pct": -1.83,
+      "northDailyYi": 28.6,
+      "northD20Yi": 623.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-21",
+      "etfShareYi": 475.2,
+      "etfShareD20Pct": -0.45,
+      "marginTrillion": 2.633,
+      "marginD20Pct": -1.25,
+      "northDailyYi": 26.8,
+      "northD20Yi": 621.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-24",
+      "etfShareYi": 473.2,
+      "etfShareD20Pct": -2.31,
+      "marginTrillion": 2.629,
+      "marginD20Pct": -1.78,
+      "northDailyYi": 29.1,
+      "northD20Yi": 622.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-25",
+      "etfShareYi": 484.0,
+      "etfShareD20Pct": -1.05,
+      "marginTrillion": 2.628,
+      "marginD20Pct": -0.7,
+      "northDailyYi": 26.7,
+      "northD20Yi": 621.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-26",
+      "etfShareYi": 488.9,
+      "etfShareD20Pct": -6.25,
+      "marginTrillion": 2.625,
+      "marginD20Pct": 0.14,
+      "northDailyYi": 25.6,
+      "northD20Yi": 612.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-27",
+      "etfShareYi": 485.7,
+      "etfShareD20Pct": -9.24,
+      "marginTrillion": 2.636,
+      "marginD20Pct": 2.01,
+      "northDailyYi": 28.5,
+      "northD20Yi": 605.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-28",
+      "etfShareYi": 482.8,
+      "etfShareD20Pct": -13.18,
+      "marginTrillion": 2.63,
+      "marginD20Pct": 1.59,
+      "northDailyYi": 27.8,
+      "northD20Yi": 597.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-08-31",
+      "etfShareYi": 485.4,
+      "etfShareD20Pct": -11.33,
+      "marginTrillion": 2.635,
+      "marginD20Pct": 2.14,
+      "northDailyYi": 32.6,
+      "northD20Yi": 600.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-01",
+      "etfShareYi": 479.4,
+      "etfShareD20Pct": -11.41,
+      "marginTrillion": 2.637,
+      "marginD20Pct": 1.72,
+      "northDailyYi": 27.3,
+      "northD20Yi": 598.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-02",
+      "etfShareYi": 479.1,
+      "etfShareD20Pct": -8.58,
+      "marginTrillion": 2.632,
+      "marginD20Pct": 1.04,
+      "northDailyYi": 24.5,
+      "northD20Yi": 587.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-03",
+      "etfShareYi": 485.1,
+      "etfShareD20Pct": -5.5,
+      "marginTrillion": 2.628,
+      "marginD20Pct": 0.46,
+      "northDailyYi": 24.3,
+      "northD20Yi": 578.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-04",
+      "etfShareYi": 492.8,
+      "etfShareD20Pct": -2.13,
+      "marginTrillion": 2.609,
+      "marginD20Pct": -0.51,
+      "northDailyYi": 27.4,
+      "northD20Yi": 571.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-07",
+      "etfShareYi": 501.5,
+      "etfShareD20Pct": 1.44,
+      "marginTrillion": 2.621,
+      "marginD20Pct": -0.6,
+      "northDailyYi": 27.1,
+      "northD20Yi": 566.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-08",
+      "etfShareYi": 491.4,
+      "etfShareD20Pct": -0.89,
+      "marginTrillion": 2.623,
+      "marginD20Pct": -0.58,
+      "northDailyYi": 26.6,
+      "northD20Yi": 563.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-09",
+      "etfShareYi": 488.1,
+      "etfShareD20Pct": 0.7,
+      "marginTrillion": 2.619,
+      "marginD20Pct": -1.06,
+      "northDailyYi": 24.6,
+      "northD20Yi": 560.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-10",
+      "etfShareYi": 488.7,
+      "etfShareD20Pct": 2.52,
+      "marginTrillion": 2.617,
+      "marginD20Pct": -1.23,
+      "northDailyYi": 22.4,
+      "northD20Yi": 551.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-11",
+      "etfShareYi": 489.5,
+      "etfShareD20Pct": 3.94,
+      "marginTrillion": 2.603,
+      "marginD20Pct": -1.71,
+      "northDailyYi": 29.1,
+      "northD20Yi": 552.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-14",
+      "etfShareYi": 492.5,
+      "etfShareD20Pct": 5.95,
+      "marginTrillion": 2.598,
+      "marginD20Pct": -2.55,
+      "northDailyYi": 23.8,
+      "northD20Yi": 546.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-15",
+      "etfShareYi": 497.0,
+      "etfShareD20Pct": 9.01,
+      "marginTrillion": 2.598,
+      "marginD20Pct": -2.72,
+      "northDailyYi": 23.0,
+      "northD20Yi": 538.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-16",
+      "etfShareYi": 506.8,
+      "etfShareD20Pct": 7.71,
+      "marginTrillion": 2.608,
+      "marginD20Pct": -1.27,
+      "northDailyYi": 26.4,
+      "northD20Yi": 532.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-17",
+      "etfShareYi": 505.4,
+      "etfShareD20Pct": 5.19,
+      "marginTrillion": 2.61,
+      "marginD20Pct": -1.12,
+      "northDailyYi": 26.0,
+      "northD20Yi": 529.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-18",
+      "etfShareYi": 502.4,
+      "etfShareD20Pct": 5.72,
+      "marginTrillion": 2.609,
+      "marginD20Pct": -0.93,
+      "northDailyYi": 33.4,
+      "northD20Yi": 536.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-21",
+      "etfShareYi": 500.3,
+      "etfShareD20Pct": 5.73,
+      "marginTrillion": 2.623,
+      "marginD20Pct": -0.23,
+      "northDailyYi": 28.4,
+      "northD20Yi": 535.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-22",
+      "etfShareYi": 499.5,
+      "etfShareD20Pct": 3.2,
+      "marginTrillion": 2.626,
+      "marginD20Pct": -0.08,
+      "northDailyYi": 29.1,
+      "northD20Yi": 537.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-23",
+      "etfShareYi": 502.6,
+      "etfShareD20Pct": 2.8,
+      "marginTrillion": 2.625,
+      "marginD20Pct": 0.01,
+      "northDailyYi": 23.7,
+      "northD20Yi": 536.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-24",
+      "etfShareYi": 499.0,
+      "etfShareD20Pct": 2.73,
+      "marginTrillion": 2.608,
+      "marginD20Pct": -1.08,
+      "northDailyYi": 23.3,
+      "northD20Yi": 530.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-28",
+      "etfShareYi": 505.2,
+      "etfShareD20Pct": 4.63,
+      "marginTrillion": 2.582,
+      "marginD20Pct": -1.85,
+      "northDailyYi": 26.1,
+      "northD20Yi": 529.0,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-29",
+      "etfShareYi": 515.0,
+      "etfShareD20Pct": 6.11,
+      "marginTrillion": 2.58,
+      "marginD20Pct": -2.12,
+      "northDailyYi": 21.3,
+      "northD20Yi": 517.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-09-30",
+      "etfShareYi": 513.3,
+      "etfShareD20Pct": 7.06,
+      "marginTrillion": 2.54,
+      "marginD20Pct": -3.66,
+      "northDailyYi": 20.8,
+      "northD20Yi": 511.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-08",
+      "etfShareYi": 511.4,
+      "etfShareD20Pct": 6.73,
+      "marginTrillion": 2.545,
+      "marginD20Pct": -3.3,
+      "northDailyYi": 27.7,
+      "northD20Yi": 514.4,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-09",
+      "etfShareYi": 522.9,
+      "etfShareD20Pct": 7.8,
+      "marginTrillion": 2.53,
+      "marginD20Pct": -3.71,
+      "northDailyYi": 29.7,
+      "northD20Yi": 519.8,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-12",
+      "etfShareYi": 531.0,
+      "etfShareD20Pct": 7.76,
+      "marginTrillion": 2.525,
+      "marginD20Pct": -3.22,
+      "northDailyYi": 24.8,
+      "northD20Yi": 517.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-13",
+      "etfShareYi": 537.0,
+      "etfShareD20Pct": 7.09,
+      "marginTrillion": 2.516,
+      "marginD20Pct": -3.99,
+      "northDailyYi": 26.2,
+      "northD20Yi": 516.3,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-14",
+      "etfShareYi": 540.9,
+      "etfShareD20Pct": 10.08,
+      "marginTrillion": 2.506,
+      "marginD20Pct": -4.46,
+      "northDailyYi": 20.5,
+      "northD20Yi": 510.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-15",
+      "etfShareYi": 555.2,
+      "etfShareD20Pct": 13.74,
+      "marginTrillion": 2.474,
+      "marginD20Pct": -5.54,
+      "northDailyYi": 26.0,
+      "northD20Yi": 511.6,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-16",
+      "etfShareYi": 606.7,
+      "etfShareD20Pct": 24.16,
+      "marginTrillion": 2.46,
+      "marginD20Pct": -6.02,
+      "northDailyYi": 22.5,
+      "northD20Yi": 511.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-19",
+      "etfShareYi": 623.9,
+      "etfShareD20Pct": 27.47,
+      "marginTrillion": 2.453,
+      "marginD20Pct": -5.73,
+      "northDailyYi": null,
+      "northD20Yi": 511.7,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-20",
+      "etfShareYi": 631.2,
+      "etfShareD20Pct": 28.17,
+      "marginTrillion": 2.451,
+      "marginD20Pct": -5.64,
+      "northDailyYi": 20.9,
+      "northD20Yi": 503.5,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-21",
+      "etfShareYi": 645.2,
+      "etfShareD20Pct": 29.82,
+      "marginTrillion": 2.45,
+      "marginD20Pct": -5.7,
+      "northDailyYi": 22.2,
+      "northD20Yi": 501.9,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-22",
+      "etfShareYi": 692.7,
+      "etfShareD20Pct": 36.68,
+      "marginTrillion": 2.427,
+      "marginD20Pct": -6.93,
+      "northDailyYi": 23.3,
+      "northD20Yi": 502.2,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-23",
+      "etfShareYi": 747.5,
+      "etfShareD20Pct": 47.89,
+      "marginTrillion": 2.403,
+      "marginD20Pct": -7.94,
+      "northDailyYi": 31.3,
+      "northD20Yi": 507.1,
+      "northIsTurnover": true
+    },
+    {
+      "date": "2026-10-26",
+      "etfShareYi": 772.0,
+      "etfShareD20Pct": 53.67,
+      "marginTrillion": 2.403,
+      "marginD20Pct": -7.94,
+      "northDailyYi": 25.4,
+      "northD20Yi": 506.5,
+      "northIsTurnover": true
+    }
+  ]
+}

@@ -17,6 +17,7 @@ export default function SiteHeader() {
   const links = [
     { href: `${prefix}/` || "/", label: "首页" },
     { href: `${prefix}/check/`, label: "指标打假" },
+    { href: `${prefix}/national-team/`, label: "国家队" },
     { href: `${prefix}/leads/`, label: "有苗头" },
     { href: `${prefix}/about/`, label: "方法" },
   ];

@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const china: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, lastModified: now, changeFrequency: "weekly", priority: 1 },
     { url: `${SITE_URL}/check/`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/national-team/`, lastModified: now, changeFrequency: "daily", priority: 0.85 },
     { url: `${SITE_URL}/leads/`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/about/`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE_URL}/request/`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
@@ -22,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const global: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/global/`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/global/check/`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/global/national-team/`, lastModified: now, changeFrequency: "daily", priority: 0.75 },
     { url: `${SITE_URL}/global/leads/`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE_URL}/global/about/`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
     { url: `${SITE_URL}/global/request/`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
